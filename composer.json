@@ -1,0 +1,67 @@
+{
+	"name": "conpassione/kvm",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 Extension kvm von conPassione gmbh",
+	"keywords": [
+		"TYPO3",
+		"TYPO3 Extension",
+		"typo3-cms-extension",
+		"kvm"
+	],
+	"homepage": "https://www.conpassione.ch/",
+	"authors": [
+		{
+			"name": "Renzo Bauen, conPassione gmbh",
+			"email": "info@conpassione.ch"
+		}
+	],
+	"license": "GPL-2.0-or-later",
+	"minimum-stability": "dev",
+	"prefer-stable" : true,
+	"require": {
+		"conpassione/cpdevsite": "*",
+		"typo3/cms-core": "^13.4"
+	},
+	"require-dev": {
+		"typo3/testing-framework": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Conpassione\\kvm\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Conpassione\\kvm\\Tests\\": "Tests"
+		}
+	},
+	"config": {
+		"vendor-dir": ".build/vendor",
+		"bin-dir": ".build/bin",
+		"sort-packages": true,
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true,
+			"helhum/dotenv-connector": true
+		}
+	},
+	"repositories": [
+		{
+			"type": "path",
+			"url": "packages/*",
+			"options": {
+				"symlink": true
+			}
+		}
+	],
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "kvm",
+			"web-dir": ".build/public"
+		},
+		"helhum/dotenv-connector": {
+			"env-file": ".env",
+			"adapter": "Helhum\\DotEnvConnector\\Adapter\\SymfonyDotEnv"
+		}
+	}
+}

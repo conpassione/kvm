@@ -1,0 +1,13 @@
+/* headings */
+
+@use '../settings' as *;
+
+@layer kvmstyles {
+  /* reset */
+  .titelclaim {
+    color: var(--clr-mnu--active);
+    padding-block-start: var(--gutter);
+    padding-block-end: 0;
+    margin: 0;
+  }
+}

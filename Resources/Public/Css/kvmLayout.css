@@ -1,0 +1,423 @@
+/* tanja:constants */
+@layer kvmstyles {
+  /* Baseline Colors */
+  /* as css constants (light theme) */
+  :root {
+    --clr-brand--primary: oklch(0.6 0.17 143.7);
+    --clr-brand--secondary: oklch(0.6 0.17 250);
+    --clr-brand--tertiary: oklch(0.6 0.17 31.5);
+    --clr-brand--quaternary: oklch(0.6 0.17 344.5);
+    --clr-branddimmed--primary: oklch(from var(--clr-brand--primary) calc(l * .8) calc(c * .8) 220);
+    --clr-branddimmed--secondary: oklch(from var(--clr-brand--secondary) calc(l * .8) calc(c * .8) 220);
+    --clr-branddimmed--tertiary: oklch(from var(--clr-brand--tertiary) calc(l * .8) calc(c * .8) 220);
+    --clr-branddimmed--quaternary: oklch(from var(--clr-brand--quaternary) calc(l * .8) calc(c * .8) 220);
+    /* ============================ */
+    /* Color Theme light            */
+    /* ============================ */
+    /* application colors */
+    --clr-text: var(--clr-bw-020);
+    --clr-background: var(--clr-bw-100);
+    --clr-h: var(--clr-brand--primary);
+    --clr-h--border: var(--clr-brand--primary);
+    --clr-accent: var(--clr-brand--primary);
+    /* element colors */
+    --clr-list--marker: var(--clr-brand--primary);
+    --clr-code--bg: var(--clr-bw-060);
+    --clr-code--bc: var(--clr-bw-030);
+    --clr-input--bg: var(--clr-bw-090);
+    /* buttons */
+    --clr-primarybtn--active: var(--clr-bw-090);
+    --clr-primarybtn--hover: var(--clr-bw-090);
+    --clr-primarybtnbg--active: var(--clr-brand--primary);
+    --clr-primarybtnbg--hover: var(--clr-bw-050);
+    --clr-primarybtnbg--disabled: oklch(from var(--clr-primarybtn--active) calc(l * .75) c h);
+    --clr-primarybtn--border: transparent;
+    --clr-secondarybtn--active: var(--clr-bw-090);
+    --clr-secondarybtnbg--active: var(--clr-brand--secondary);
+    --clr-secondarybtnbg--hover: var(--clr-bw-050);
+    --clr-secondarybtnbg--disabled: oklch(from var(--clr-secondarybtnbg--active) calc(l * .75) c h);
+    --clr-secondarybtn--border: transparent;
+    /* section colors */
+    --clr-headerbg: var(--clr-brand--primary);
+    --clr-background-accent: var(--clr-bw-080);
+    --clr-background-brandcolor: oklch(from var(--clr-brand--primary) calc(l * 1.4) calc(c * 0.5) h);
+    --clr-footer-text: var(--clr-bw-100);
+    --clr-footerbg: var(--clr-bw-070);
+    --clr-footer--border: var(--clr-brand--primary);
+    /* menu colors */
+    --clr-mnu: var(--clr-bw-080);
+    --clr-mnu--active: var(--clr-bw-100);
+    --clr-mnu--hover: var(--clr-bw-100);
+    --clr-mnubg: var(--clr-headerbg);
+    --clr-mnumobilebg: var(--clr-headerbg);
+    --clr-mnubg--active: var(--clr-headerbg);
+    --clr-mnubg--hover: var(--clr-bw-030);
+    /* logo */
+    --clr-logo: var(--clr-bw-100);
+    --clr-logobg: transparent;
+    /* cards */
+    --clr-card--accent: var(--clr-brand--primary);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* buttons */
+      --clr-primarybtn--active: var(--clr-bw-090);
+      --clr-primarybtnbg--active: var(--clr-brand--primary);
+      --clr-primarybtn--disabled: oklch(from var(--clr-primarybtn--active) calc(l * .75) c h);
+      --clr-input--bg: var(--clr-bw-100);
+      /* typographic colors */
+      --clr-text: var(--clr-bw-020);
+      --clr-h: var(--clr-brand--primary);
+      --clr-background: var(--clr-bw-100);
+      --clr-background-accent: var(--clr-bw-040);
+      --clr-background-brandcolor: oklch(from var(--clr-brand--primary) calc(l * .8) calc(c * 0.5) h);
+      --clr-footer-text: var(--clr-bw-100);
+      --clr-footerbg: var(--clr-bw-070);
+    }
+  }
+}
+/* fonts */
+@layer kvmstyles {
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-ExtraBold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  /* =============================== */
+  :root {
+    /* fontfaces */
+    --ff: "Open Sans";
+    --ff-condensed: "Open Sans";
+    --ff-serif: "Open Sans";
+    --ff-h: "Open Sans";
+    --ff-nav: "Open Sans";
+    --ff-mono: "Open Sans";
+    --ff-symbol: "Symbols";
+    /* font weight */
+    --fw-regular: 300;
+    --fw-mono: 300;
+    --fw-bold: 700;
+    /* font size */
+    --fs-minor: 16px;
+    --fs-regular: 18px;
+    --fs-regular--big: 24px;
+    /* line height */
+    --lh-regular: 1.6;
+    --lh-small: 1.2;
+    --lh-h: var(--lh-small);
+    /* regular font */
+    --fs-standard: clamp(var(--fs-regular), (100vw - 960px) / 100 + var(--fs-regular), var(--fs-regular--big));
+    --fs-big: calc(var(--fs-standard) * 1.125);
+    --fs-small: calc(var(--fs-standard) * 0.875);
+    font-size: var(--fs-standard);
+    line-height: var(--lh-regular);
+  }
+  .fs-big {
+    font-size: var(--fs-big);
+    line-height: 1.8;
+  }
+  .fs-small {
+    font-size: var(--fs-small);
+  }
+}
+/* metrics */
+@layer tanjastyles {
+  :root {
+    --gutter: 1rem;
+    --container-gutter: 2rem;
+    --flow-spacer: 1em;
+  }
+}
+/* headings */
+@layer kvmstyles {
+  /* reset */
+  .titelclaim {
+    color: var(--clr-mnu--active);
+    padding-block-start: var(--gutter);
+    padding-block-end: 0;
+    margin: 0;
+  }
+}
+/* navmainmenu */
+@layer kvmstyles {
+  /* main navigation */
+  .menu-items {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: var(--clr-mnu);
+    background-color: transparent;
+  }
+  .menu-item {
+    margin-inline: 1rem;
+  }
+  .menu-items > li.active {
+    color: var(--clr-mnu--active);
+    font-weight: bold;
+    background-color: transparent;
+  }
+  .menu-items > li.active a {
+    border-bottom: 4px dotted var(--clr-mnu--active, black);
+  }
+  .menu-items > li a.menu-item {
+    display: block;
+    padding: 0;
+  }
+  .menu-items > li a.menu-item:hover,
+  .menu-items > li a.menu-item:focus {
+    color: var(--clr-mnu--hover);
+    background-color: transparent;
+    border-bottom: 4px solid var(--clr-mnu--hover, gray);
+  }
+  .menu-items > li a.menu-item:focus-visible {
+    background-color: transparent;
+    border-bottom: 4px solid var(--clr-mnu--hover, gray);
+  }
+  .nav-mobile {
+    top: 60px;
+    right: 22px;
+    width: max-content;
+    padding: var(--gutter);
+    background-color: oklch(from var(--clr-mnubg) l c h/0.6);
+    backdrop-filter: blur(1rem);
+  }
+  .level-0 {
+    margin-inline-start: 0;
+  }
+  .mlevel-1 {
+    list-style: none;
+    flex-flow: column;
+    gap: var(--gutter);
+    align-content: flex-start;
+    background-color: transparent;
+    padding: 0;
+    max-height: calc(100svh - 5rem);
+    overflow-y: scroll;
+  }
+  .mlevel-2,
+  .mlevel-3 {
+    list-style: none;
+    padding: 0;
+  }
+  .current:is(.mlevel-01, .mlevel-02, .mlevel-03) > a {
+    color: var(--clr-mnu--active);
+    background-color: var(--clr-mnubg--active);
+  }
+  .mlevel-01 {
+    flex: min-content 1 1;
+    display: inline-block;
+    border-block-start: 1px solid var(--clr-mnu);
+    background-color: var(--clr-mnumobilebg);
+  }
+  .mlevel-02,
+  .mlevel-03 {
+    display: block;
+    font-size: var(--fs-small);
+  }
+  .mlevel-02 {
+    padding-inline-start: var(--gutter);
+  }
+  .mlevel-03 {
+    padding-inline-start: calc(var(--gutter) * 2);
+  }
+  a.mmenu-item {
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .hamburger-menu svg {
+    --button-color: var(--clr-mnu--active);
+  }
+  .hamburger-menu svg:hover {
+    --button-color: var(--clr-mnu--hover);
+    background-color: var(--clr-mnubg--hover);
+  }
+}
+/* sections (typo3-containers) */
+@layer kvmstyles {
+  section {
+    padding-block: calc(var(--gutter) * 2);
+  }
+  .section-hero {
+    background-color: black;
+    padding-block-end: 0;
+    margin-block-end: calc(var(--gutter) * 2);
+  }
+  .section-hero .hero {
+    position: relative;
+    grid-row: revert;
+  }
+  .section-hero .cp-image {
+    margin-block-end: 0;
+  }
+  .section-hero .heroleft {
+    grid-column: full-width;
+  }
+  .section-hero .heroright {
+    background-color: black;
+    grid-column: content;
+    padding-block: var(--gutter);
+  }
+  .section-hero-small img {
+    height: 50vh;
+  }
+  .hero-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, transparent 0%, transparent 70%, black 100%);
+  }
+  .heroright {
+    margin-bottom: 0;
+  }
+  .heroright .cp-text {
+    z-index: 2;
+    color: white;
+  }
+  .heroright .cp-text .h2 {
+    margin-block: 1em;
+    border: 0;
+    color: white;
+  }
+  @media (width > 960px) {
+    .section-hero .hero {
+      grid-row: 1/-1;
+    }
+    .section-hero .heroleft {
+      grid-column: full-width-start/centerline;
+    }
+    .section-hero .heroright {
+      grid-column: centerline/breakout-end;
+      align-content: start;
+    }
+  }
+}
+/* page */
+@layer kvmstyles {
+  /*   .headercontent {
+      display: grid;
+      justify-content: space-between;
+      align-items: end;
+      container-type: inline-size;
+      container-name: headercontent;
+      position: relative;
+    }
+
+    .mobilemenu {
+      padding-block: var(--gutter);
+      margin-inline: 0;
+      position: relative;
+    }*/
+  .logo {
+    background-color: var(--clr-brand--primary);
+    width: min(150px, 20vw);
+  }
+  .kvm-titel {
+    color: var(--clr-mnu--active);
+    padding-inline-start: 22vw;
+  }
+}
+/* page */
+@layer kvmstyle {
+  footer {
+    color: var(--clr-footer-text);
+    background-color: var(--clr-footerbg);
+  }
+  .footer--content {
+    padding-block: var(--gutter);
+  }
+}
+/* page */
+@layer kvmstyles {
+  main {
+    margin-block-start: 12px;
+    container: main/inline-size;
+    align-content: start;
+  }
+}
+
+/*# sourceMappingURL=kvmLayout.css.map */

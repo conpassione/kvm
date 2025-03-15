@@ -1,0 +1,76 @@
+/* sections (typo3-containers) */
+
+@layer kvmstyles {
+
+  section {
+    padding-block: calc(var(--gutter) * 2);
+  }
+
+  .section-hero {
+    background-color: black;
+    padding-block-end: 0;
+    margin-block-end: calc(var(--gutter) * 2);
+
+    .hero {
+      position: relative;
+      grid-row: revert;
+    }
+
+    .cp-image {
+      margin-block-end: 0;
+    }
+
+    .heroleft {
+      grid-column: full-width;
+    }
+    .heroright {
+      background-color: black;
+      grid-column: content;
+      padding-block: var(--gutter);
+    }
+  }
+
+  .section-hero-small {
+    img {
+      height: 50vh;
+    }
+  }
+
+  .hero-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, transparent 0%, transparent 70%, black 100%);
+  }
+
+  .heroright {
+    margin-bottom: 0;
+    .cp-text {
+      z-index: 2;
+      color: white;
+
+      .h2 {
+        margin-block: 1em;
+        border: 0;
+        color: white;
+      }
+    }
+  }
+
+  @media (width > 960px) {
+    .section-hero {
+      .hero {
+        grid-row: 1 / -1;
+      }
+      .heroleft {
+        grid-column: full-width-start / centerline;
+      }
+      .heroright {
+        grid-column: centerline / breakout-end;
+        align-content: start;
+      }
+    }
+  }
+}

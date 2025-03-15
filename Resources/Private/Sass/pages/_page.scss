@@ -1,0 +1,11 @@
+/* page */
+@use '../settings' as *;
+
+@layer kvmstyles {
+
+  main {
+    margin-block-start: 12px;
+    container: main / inline-size;
+    align-content: start;
+  }
+}

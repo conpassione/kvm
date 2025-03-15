@@ -1,0 +1,33 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<section id="section-hero" class="section-hero content-grid full-width">
+
+    <div class="hero heroleft">
+        <f:for each="{hero.records}" as="record">
+            <f:if condition = "{record.CType} === 'image'">
+                <f:then>
+                    <f:cObject
+                        typoscriptObjectPath="tt_content.{record.CType}"
+                        data="{files: record.image, showcaption: 0, image_zoom: records.image_zoom}"
+                        table="tt_content"
+                    />
+                </f:then>
+            </f:if>
+        </f:for>
+        <div class="hero-gradient"></div>
+    </div>
+    <div class="hero heroright">
+        <h1 class="h1 h1--kvmpagetitle">{pageTitle}</h1>
+        <f:for each="{hero.records}" as="record">
+            <f:if condition = "{record.CType} === 'text'">
+                <f:then>
+                    <f:cObject
+                        typoscriptObjectPath="tt_content.{record.CType}"
+                        data="{record}"
+                        table="tt_content"
+                    />
+                </f:then>
+            </f:if>
+        </f:for>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+/* page */
+@layer kvmstyles {
+
+/*   .headercontent {
+    display: grid;
+    justify-content: space-between;
+    align-items: end;
+    container-type: inline-size;
+    container-name: headercontent;
+    position: relative;
+  }
+
+  .mobilemenu {
+    padding-block: var(--gutter);
+    margin-inline: 0;
+    position: relative;
+  }*/
+
+  .logo {
+    background-color: var(--clr-brand--primary);
+    width: min(150px, 20vw);
+  }
+
+  .kvm-titel {
+    color: var(--clr-mnu--active);
+    padding-inline-start: 22vw;
+  }
+}
