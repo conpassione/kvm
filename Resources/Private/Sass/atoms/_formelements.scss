@@ -1,0 +1,16 @@
+@use '../settings' as *;
+
+@layer kvmstyles {
+
+  .form-h2 {
+    color: var(--clr-h);
+    font-size: 110%;
+  }
+
+  input, textarea, select {
+    &:focus-visible {
+      outline: 1px solid var(--clr-text);
+    }
+  }
+
+}

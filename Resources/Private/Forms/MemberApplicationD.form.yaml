@@ -33,10 +33,10 @@ finishers:
 renderables:
   - renderingOptions:
       previousButtonLabel: 'Vorherige Seite'
-      nextButtonLabel: 'Nächster Seite'
+      nextButtonLabel: 'Weiter'
     type: Page
     identifier: page-1
-    label: Hauptmitglied
+    label: 'Antrag auf Mitgliedschaft KVM'
     renderables:
       - properties:
           options:
@@ -49,7 +49,7 @@ renderables:
         label: 'Anrede'
         defaultValue: 0
       - type: GridRow
-        identifier: gridrow-2
+        identifier: gridrow-1
         label: 'Grid: Zeile'
         renderables:
           - defaultValue: ''
@@ -84,7 +84,7 @@ renderables:
         identifier: address
         label: 'Adresse'
       - type: GridRow
-        identifier: gridrow-3
+        identifier: gridrow-2
         label: 'Grid: Zeile'
         renderables:
           - defaultValue: ''
@@ -96,7 +96,7 @@ renderables:
             type: Text
             label: Ort
       - type: GridRow
-        identifier: gridrow-4
+        identifier: gridrow-3
         label: 'Grid: Zeile'
         renderables:
           - defaultValue: ''
@@ -118,57 +118,6 @@ renderables:
             validators:
               - identifier: EmailAddress
               - identifier: NotEmpty
-  - renderingOptions:
-      previousButtonLabel: 'Vorherige Seite'
-      nextButtonLabel: 'Nächster Schritt'
-    type: Page
-    identifier: page-2
-    label: 'Partnermitglied'
-    renderables:
-      - type: GridRow
-        identifier: gridrow-21
-        label: 'Grid: Zeile'
-        renderables:
-          - defaultValue: ''
-            type: Text
-            identifier: lastname2
-            label: Name
-            properties:
-              elementDescription: 'Name des Partnermitgliedes'
-          - defaultValue: ''
-            type: Text
-            identifier: firstname2
-            label: Vorname
-            properties:
-              elementDescription: 'Vorname des Partnermitgliedes'
-      - type: GridRow
-        identifier: gridrow-24
-        label: 'Grid: Zeile'
-        renderables:
-          - defaultValue: ''
-            type: Text
-            identifier: mobile2
-            label: Mobiltelefon
-            properties:
-              elementDescription: ''
-          - defaultValue: ''
-            type: Text
-            identifier: email2
-            label: E-Mail
-            properties:
-              fluidAdditionalAttributes:
-                required: required
-              validationErrorMessages:
-                - code: 1221559976
-                  message: 'Die E-Mail ist für die Kommunikation nötig, bitte gültige E-Mail erfassen.'
-            validators:
-              - identifier: EmailAddress
-              - identifier: NotEmpty
-      - properties:
-          text: 'Die folgenden Angaben werden benötigt um Sie als Clubmitglied mit den korrekten Informationen zu beliefern.'
-        type: StaticText
-        identifier: statictext-1
-        label: Zusatzinformationen
       - type: Checkbox
         identifier: confirmation
         label: 'Ich bin einverstanden, dass die erfassten Daten für die Zwecke des Club verwendet und im Mitgliederverzeichnis der SKG aufgeführt werden.'
@@ -181,37 +130,11 @@ renderables:
               message: 'Bitte Verwendung der Daten zustimmen.'
         validators:
           - identifier: NotEmpty
-      - type: GridRow
-        identifier: gridrow-1
-        label: 'Grid: Zeile'
-        renderables:
-          - properties:
-              options:
-                deutsch: deutsch
-                francais: français
-              elementDescription: 'Wählen Sie die Korresponenzsprache aus.'
-              fluidAdditionalAttributes:
-                required: required
-            type: RadioButton
-            identifier: comlanguage
-            label: Korrespondenzsprache
-            defaultValue: deutsch
-            validators:
-              - identifier: NotEmpty
-          - properties:
-              options:
-                'Schweizer HUND': 'Schweizer HUND'
-                'Cynologie Romand': 'Cynologie Romand'
-                'Abo über anderen Verein': 'Abo über andern Verein'
-              elementDescription: 'Wählen Sie die offizielle Zeitschrift aus'
-              fluidAdditionalAttributes:
-                required: required
-            type: RadioButton
-            identifier: officialpaper
-            label: 'Offizielle Zeitschrift'
-            defaultValue: 'Schweizer HUND'
-            validators:
-              - identifier: NotEmpty
+      - identifier: smrecinfo
+        properties:
+          text: '* Pflichtfelder'
+        type: StaticText
+        label: ''
   - renderingOptions:
       previousButtonLabel: 'Vorherige Seite'
       nextButtonLabel: 'Nächster Schritt'
