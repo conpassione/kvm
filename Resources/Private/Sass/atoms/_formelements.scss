@@ -7,6 +7,11 @@
     font-size: 110%;
   }
 
+  .form-control {
+    color: var(--clr-input);
+    background-color: var(--clr-input--bg);
+  }
+
   input, textarea, select {
     &:focus-visible {
       outline: 1px solid var(--clr-text);
