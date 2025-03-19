@@ -10,8 +10,8 @@
     right: 22px;
     max-width: 85vw;
     width: 100%;
-    padding: var(--gutter);
-    background-color: oklch(from var(--clr-mnubg) l c h / 0.6);
+    padding: calc(var(--gutter) / 2 );
+    background-color: oklch(from var(--clr-mnumobilebg) l c h / 0.6);
     backdrop-filter: blur(1rem);
   }
 
@@ -21,8 +21,9 @@
 
   .mlevel-1 {
     list-style: none;
-    flex-flow: row;
-    gap: var(--gutter);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: calc(var(--gutter) / 2);
     justify-content: space-between;
     align-content: space-between;
     background-color: transparent;
@@ -37,16 +38,10 @@
     padding: 0;
   }
 
-  .current:is(.mlevel-01, .mlevel-02, .mlevel-03) > a {
-    color: var(--clr-mnu--active);
-    background-color: var(--clr-mnubg--active);
-  }
-
   .mlevel-01 {
-    flex: min-content 1 1;
+    flex: 250px 1 1;
     display: inline-block;
     border-block-start: 0;
-    background-color: var(--clr-mnumobilebg);
   }
 
   .mlevel-02,
@@ -66,18 +61,6 @@
     display: block;
     padding: 0.5em;
     width: 100%;
-    color: var(--clr-mnumobile);
-  }
-
-  a.mmenu-item:hover,
-  a.mmenu-item:focus {
-    color: var(--clr-mnu--hover);
-    background-color: var(--clr-mnubg--hover);
-  }
-
-  a.mmenu-item:focus-visible {
-    color: var(--clr-mnu--hover);
-    background-color: var(--clr-mnubg--hover);
   }
 
   .hamburger-menu svg {

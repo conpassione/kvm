@@ -7,7 +7,7 @@
   :root {
     --clr-brand--primary:           oklch(0.6 0.17 143.7);
     --clr-brand--secondary:         oklch(0.6 0.17 250);
-    --clr-brand--tertiary:          oklch(0.6 0.17 31.5);
+    --clr-brand--tertiary:          oklch(0.6 0.061 62);
     --clr-brand--quaternary:        oklch(0.6 0.17 344.5);
     --clr-branddimmed--primary:     oklch(from var(--clr-brand--primary) calc(l * .8) calc(c * .8) h);
     --clr-branddimmed--secondary:   oklch(from var(--clr-brand--secondary) calc(l * .8) calc(c * .8) h);
@@ -59,10 +59,14 @@
     --clr-mnu--active:              var(--clr-bw-100);
     --clr-mnu--hover:               var(--clr-bw-100);
     --clr-mnubg:                    var(--clr-headerbg);
-    --clr-mnumobile:                var(--clr-bw-000);
-    --clr-mnumobilebg:              var(--clr-headerbg);
     --clr-mnubg--active:            var(--clr-headerbg);
-    --clr-mnubg--hover:             var(--clr-branddimmed--secondary);
+    --clr-mnubg--hover:             var(--clr-branddimmed--tertiary);
+    --clr-mnumobile:                var(--clr-bw-000);
+    --clr-mnumobile--active:        var(--clr-bw-100);
+    --clr-mnumobile--hover:         var(--clr-bw-090);
+    --clr-mnumobilebg:              var(--clr-bw-070);
+    --clr-mnumobilebg--active:      var(--clr-brand--tertiary);
+    --clr-mnumobilebg--hover:       var(--clr-branddimmed--tertiary);
 
     /* logo */
     --clr-logo:                     var(--clr-bw-100);

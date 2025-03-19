@@ -5,7 +5,7 @@
   :root {
     --clr-brand--primary: oklch(0.6 0.17 143.7);
     --clr-brand--secondary: oklch(0.6 0.17 250);
-    --clr-brand--tertiary: oklch(0.6 0.17 31.5);
+    --clr-brand--tertiary: oklch(0.6 0.061 62);
     --clr-brand--quaternary: oklch(0.6 0.17 344.5);
     --clr-branddimmed--primary: oklch(from var(--clr-brand--primary) calc(l * .8) calc(c * .8) h);
     --clr-branddimmed--secondary: oklch(from var(--clr-brand--secondary) calc(l * .8) calc(c * .8) h);
@@ -50,10 +50,14 @@
     --clr-mnu--active: var(--clr-bw-100);
     --clr-mnu--hover: var(--clr-bw-100);
     --clr-mnubg: var(--clr-headerbg);
-    --clr-mnumobile: var(--clr-bw-000);
-    --clr-mnumobilebg: var(--clr-headerbg);
     --clr-mnubg--active: var(--clr-headerbg);
-    --clr-mnubg--hover: var(--clr-branddimmed--secondary);
+    --clr-mnubg--hover: var(--clr-branddimmed--tertiary);
+    --clr-mnumobile: var(--clr-bw-000);
+    --clr-mnumobile--active: var(--clr-bw-100);
+    --clr-mnumobile--hover: var(--clr-bw-090);
+    --clr-mnumobilebg: var(--clr-bw-070);
+    --clr-mnumobilebg--active: var(--clr-brand--tertiary);
+    --clr-mnumobilebg--hover: var(--clr-branddimmed--tertiary);
     /* logo */
     --clr-logo: var(--clr-bw-100);
     --clr-logobg: transparent;
@@ -82,103 +86,103 @@
 /* fonts */
 @layer kvmstyles {
   @font-face {
-    font-family: "Open Sans";
+    font-family: "Open SansEB";
     src: url("../Fonts/OpenSans-ExtraBold.woff2") format("woff2");
-    font-weight: bold;
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: "Open Sans";
+    font-family: "Open SansEB";
     src: url("../Fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2");
-    font-weight: bold;
+    font-weight: 900;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
-    font-family: "Open Sans";
+    font-family: "Open SansB";
     src: url("../Fonts/OpenSans-Bold.woff2") format("woff2");
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: "Open Sans";
+    font-family: "Open SansB";
     src: url("../Fonts/OpenSans-BoldItalic.woff2") format("woff2");
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
-    font-family: "Open Sans";
-    src: url("../Fonts/OpenSans-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Open Sans";
-    src: url("../Fonts/OpenSans-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Open Sans";
+    font-family: "Open SansSB";
     src: url("../Fonts/OpenSans-SemiBold.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
-    font-family: "Open Sans";
-    src: url("../Fonts/OpenSans-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Open Sans";
-    src: url("../Fonts/OpenSans-LightItalic.woff2") format("woff2");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Open Sans";
-    src: url("../Fonts/OpenSans-Italic.woff2") format("woff2");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Open Sans";
+    font-family: "Open SansSB";
     src: url("../Fonts/OpenSans-SemiBoldItalic.woff2") format("woff2");
     font-weight: 600;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
-    font-family: "Open Sans";
+    font-family: "Open SansM";
+    src: url("../Fonts/OpenSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open SansM";
     src: url("../Fonts/OpenSans-MediumItalic.woff2") format("woff2");
     font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-Regular.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../Fonts/OpenSans-Italic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open SansL";
+    src: url("../Fonts/OpenSans-Light.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Open SansL";
+    src: url("../Fonts/OpenSans-LightItalic.woff2") format("woff2");
+    font-weight: 100;
     font-style: italic;
     font-display: swap;
   }
   /* =============================== */
   :root {
     /* fontfaces */
-    --ff: "Open Sans";
-    --ff-condensed: "Open Sans";
-    --ff-serif: "Open Sans";
-    --ff-h: "Open Sans";
+    --ff: "Open SansL";
+    --ff-condensed: "Open SansL";
+    --ff-serif: "Open SansL";
+    --ff-h: "Open SansL";
     --ff-nav: "Open Sans";
     --ff-mono: "Open Sans";
     --ff-symbol: "Symbols";
     /* font weight */
-    --fw-regular: 300;
+    --fw-regular: 100;
     --fw-mono: 300;
-    --fw-bold: 700;
+    --fw-bold: 600;
     /* font size */
     --fs-minor: 16px;
     --fs-regular: 18px;
@@ -213,6 +217,10 @@
 /* headings */
 @layer kvmstyles {
   /* reset */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-h), sans-serif;
+    font-weight: var(--fw-regular);
+  }
   .titelclaim {
     color: var(--clr-mnu--active);
     padding-block-start: var(--gutter);
@@ -251,8 +259,8 @@
     right: 22px;
     max-width: 85vw;
     width: 100%;
-    padding: var(--gutter);
-    background-color: oklch(from var(--clr-mnubg) l c h/0.6);
+    padding: calc(var(--gutter) / 2);
+    background-color: oklch(from var(--clr-mnumobilebg) l c h/0.6);
     backdrop-filter: blur(1rem);
   }
   .level-0 {
@@ -260,8 +268,9 @@
   }
   .mlevel-1 {
     list-style: none;
-    flex-flow: row;
-    gap: var(--gutter);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: calc(var(--gutter) / 2);
     justify-content: space-between;
     align-content: space-between;
     background-color: transparent;
@@ -274,15 +283,10 @@
     list-style: none;
     padding: 0;
   }
-  .current:is(.mlevel-01, .mlevel-02, .mlevel-03) > a {
-    color: var(--clr-mnu--active);
-    background-color: var(--clr-mnubg--active);
-  }
   .mlevel-01 {
-    flex: min-content 1 1;
+    flex: 250px 1 1;
     display: inline-block;
     border-block-start: 0;
-    background-color: var(--clr-mnumobilebg);
   }
   .mlevel-02,
   .mlevel-03 {
@@ -299,16 +303,6 @@
     display: block;
     padding: 0.5em;
     width: 100%;
-    color: var(--clr-mnumobile);
-  }
-  a.mmenu-item:hover,
-  a.mmenu-item:focus {
-    color: var(--clr-mnu--hover);
-    background-color: var(--clr-mnubg--hover);
-  }
-  a.mmenu-item:focus-visible {
-    color: var(--clr-mnu--hover);
-    background-color: var(--clr-mnubg--hover);
   }
   .hamburger-menu svg {
     --button-color: var(--clr-mnu--active);
@@ -416,6 +410,9 @@
 }
 /* page */
 @layer kvmstyles {
+  html {
+    font-weight: var(--fw-regular);
+  }
   main {
     margin-block-start: 12px;
     container: main/inline-size;

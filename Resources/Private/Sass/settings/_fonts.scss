@@ -3,55 +3,39 @@
 @layer kvmstyles {
 
   @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open SansEB';
     src: url('../Fonts/OpenSans-ExtraBold.woff2') format('woff2');
-    font-weight: bold;
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open SansEB';
     src: url('../Fonts/OpenSans-ExtraBoldItalic.woff2') format('woff2');
-    font-weight: bold;
+    font-weight: 900;
     font-style: italic;
     font-display: swap;
   }
 
   @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open SansB';
     src: url('../Fonts/OpenSans-Bold.woff2') format('woff2');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open SansB';
     src: url('../Fonts/OpenSans-BoldItalic.woff2') format('woff2');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
     font-display: swap;
   }
 
   @font-face {
-    font-family: 'Open Sans';
-    src: url('../Fonts/OpenSans-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('../Fonts/OpenSans-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open SansSB';
     src: url('../Fonts/OpenSans-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
@@ -59,31 +43,7 @@
   }
 
   @font-face {
-    font-family: 'Open Sans';
-    src: url('../Fonts/OpenSans-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('../Fonts/OpenSans-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('../Fonts/OpenSans-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open SansSB';
     src: url('../Fonts/OpenSans-SemiBoldItalic.woff2') format('woff2');
     font-weight: 600;
     font-style: italic;
@@ -91,28 +51,69 @@
   }
 
   @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open SansM';
+    src: url('../Fonts/OpenSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open SansM';
     src: url('../Fonts/OpenSans-MediumItalic.woff2') format('woff2');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../Fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../Fonts/OpenSans-Italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open SansL';
+    src: url('../Fonts/OpenSans-Light.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open SansL';
+    src: url('../Fonts/OpenSans-LightItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+
+
   /* =============================== */
   :root {
     /* fontfaces */
-    --ff:              'Open Sans';
-    --ff-condensed:    'Open Sans';
-    --ff-serif:        'Open Sans';
-    --ff-h:            'Open Sans';
+    --ff:              'Open SansL';
+    --ff-condensed:    'Open SansL';
+    --ff-serif:        'Open SansL';
+    --ff-h:            'Open SansL';
     --ff-nav:          'Open Sans';
     --ff-mono:         'Open Sans';
     --ff-symbol:       'Symbols';
 
     /* font weight */
-    --fw-regular:      300;
+    --fw-regular:      100;
     --fw-mono:         300;
-    --fw-bold:         700;
+    --fw-bold:         600;
 
     /* font size */
     --fs-minor:        16px;

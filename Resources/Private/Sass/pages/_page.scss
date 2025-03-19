@@ -3,6 +3,11 @@
 
 @layer kvmstyles {
 
+  html {
+    font-weight: var(--fw-regular);
+  }
+
+
   main {
     margin-block-start: 12px;
     container: main / inline-size;
