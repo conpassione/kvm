@@ -9,6 +9,17 @@
     font-weight: var(--fw-regular);
   }
 
+  .h1-font,
+  .h1 {
+    font-size: clamp(1.5rem, 2.25vw, 3rem);
+  }
+
+  .h2-font,
+  .h2 {
+    font-size: clamp(1.25rem, 1.75vw, 2.5rem);
+  }
+
+
   .titelclaim {
     color: var(--clr-mnu--active);
     padding-block-start: var(--gutter);
