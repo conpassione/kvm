@@ -3,7 +3,7 @@
 <f:layout name="Layout-{page.pagerecord.layout}" />
 
 <f:section name="Main">
-    <f:render section="Hero" arguments="{hero: pagecontent.hero, pageTitle: page.pagerecord.subtitle}" />
+    <f:render partial="Hero" arguments="{hero: pagecontent.hero, pageTitle: page.pagerecord.subtitle}" />
     <f:for each="{pagecontent.content.records}" as="record">
         <f:cObject
             typoscriptObjectPath="tt_content.{record.CType}"
@@ -11,15 +11,7 @@
             table="tt_content"
         />
     </f:for>
-    <f:render section="Submenu" arguments="{submenu: submenu}" />
-</f:section>
-
-<f:section name="Hero">
-    <f:render partial="Hero" arguments="{hero: hero, pageTitle: pageTitle}"/>
-</f:section>
-
-<f:section name="Submenu">
-   <f:render partial="Menu/SubMenu" arguments="{submenu: submenu}"/>
+    <f:render partial="Menu/SubMenu" arguments="{submenu: submenu}"/>
 </f:section>
 
 </html>

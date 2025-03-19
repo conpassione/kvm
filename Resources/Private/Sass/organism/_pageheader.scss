@@ -19,6 +19,9 @@
   .logo {
     background-color: var(--clr-brand--primary);
     width: min(150px, 20vw);
+    left: 1rem;
+    grid-column: 1;
+    border-radius: var(--border-radius);
   }
 
   .kvm-titel {

@@ -51,13 +51,13 @@
     --clr-mnu--hover: var(--clr-bw-100);
     --clr-mnubg: var(--clr-headerbg);
     --clr-mnubg--active: var(--clr-headerbg);
-    --clr-mnubg--hover: var(--clr-branddimmed--tertiary);
+    --clr-mnubg--hover: var(--clr-branddimmed--primary);
     --clr-mnumobile: var(--clr-bw-000);
     --clr-mnumobile--active: var(--clr-bw-100);
     --clr-mnumobile--hover: var(--clr-bw-090);
-    --clr-mnumobilebg: var(--clr-bw-070);
-    --clr-mnumobilebg--active: var(--clr-brand--tertiary);
-    --clr-mnumobilebg--hover: var(--clr-branddimmed--tertiary);
+    --clr-mnumobilebg: var(--clr-bw-080);
+    --clr-mnumobilebg--active: var(--clr-brand--primary);
+    --clr-mnumobilebg--hover: var(--clr-branddimmed--primary);
     /* logo */
     --clr-logo: var(--clr-bw-100);
     --clr-logobg: transparent;
@@ -223,11 +223,17 @@
   }
   .h1-font,
   .h1 {
-    font-size: clamp(1.5rem, 2.25vw, 3rem);
+    font-size: clamp(2.25rem, 2.75vw, 3.5rem);
   }
   .h2-font,
   .h2 {
-    font-size: clamp(1.25rem, 1.75vw, 2.5rem);
+    font-size: clamp(2rem, 2.25vw, 3rem);
+  }
+  .h3-font,
+  .h4-font,
+  .h3,
+  .h4 {
+    font-size: clamp(1.1rem, 1.5vw, 2rem);
   }
   .titelclaim {
     color: var(--clr-mnu--active);
@@ -270,6 +276,7 @@
     padding: calc(var(--gutter) / 2);
     background-color: oklch(from var(--clr-mnumobilebg) l c h/0.6);
     backdrop-filter: blur(1rem);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
   .level-0 {
     margin-inline-start: 0;
@@ -277,8 +284,8 @@
   .mlevel-1 {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2px;
     justify-content: space-between;
     align-content: space-between;
     background-color: transparent;
@@ -377,7 +384,7 @@
     }
     .section-hero .heroright {
       grid-column: centerline/breakout-end;
-      align-content: start;
+      align-content: center;
     }
   }
 }
@@ -400,6 +407,9 @@
   .logo {
     background-color: var(--clr-brand--primary);
     width: min(150px, 20vw);
+    left: 1rem;
+    grid-column: 1;
+    border-radius: var(--border-radius);
   }
   .kvm-titel {
     color: var(--clr-mnu--active);
