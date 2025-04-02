@@ -1,5 +1,5 @@
-identifier: simple-messaged
-label: 'Einfaches Anfrageformular'
+identifier: simple-messaged-kvm
+label: 'KVM Einfaches Anfrageformular'
 type: Form
 prototypeName: standard
 renderingOptions:

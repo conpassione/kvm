@@ -1,15 +1,8 @@
 page {
   includeCSS {
-    zcpmk = EXT:kvm/Resources/Public/Css/kvmLayout.css
+    zkvm = EXT:kvm/Resources/Public/Css/kvmLayout.css
   }
 #  includeCSS {
 #    globalcss = EXT:cpdevsite/Resources/Public/Css/Layout.css
 #  }
-}
-
-
-lib.SVGinline = SVG
-lib.SVGinline {
-  renderMode = inline
-  src.field = src
 }

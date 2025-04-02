@@ -207,7 +207,7 @@
   }
 }
 /* metrics */
-@layer tanjastyles {
+@layer kvmstyles {
   :root {
     --gutter: 1rem;
     --container-gutter: 2rem;
@@ -263,6 +263,12 @@
   }
   input:focus-visible, textarea:focus-visible, select:focus-visible {
     outline: 1px solid var(--clr-text);
+  }
+  .form-group:has(input[readonly=readonly]) .form-control {
+    padding-inline: 0;
+    background-color: transparent;
+    color: var(--clr-brand--primary);
+    font-weight: var(--fw-bold);
   }
 }
 /* navmainmenu */

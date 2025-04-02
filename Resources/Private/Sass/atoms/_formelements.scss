@@ -18,4 +18,12 @@
     }
   }
 
+  .form-group:has(input[readonly=readonly]) {
+    .form-control {
+      padding-inline: 0;
+      background-color: transparent;
+      color: var(--clr-brand--primary);
+      font-weight: var(--fw-bold);
+    }
+  }
 }

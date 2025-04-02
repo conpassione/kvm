@@ -1,5 +1,5 @@
-identifier: membership-application
-label: Mitgliedschaftsantragsformular
+identifier: membership-application-kvm
+label: Mitgliedschaftsantragsformular KVM
 type: Form
 prototypeName: standard
 renderingOptions:
