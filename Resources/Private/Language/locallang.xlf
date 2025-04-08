@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" original="locallang.xlf" datatype="plaintext" product-name="conpassione/cpkm" date="2025-04-08T18:44:28+02:00">
+		<header></header>
+		<body>
+			<trans-unit id="event.end">
+				<source>End</source>
+			</trans-unit>
+			<trans-unit id="event.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="event.start">
+				<source>Start</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="fr" original="labels.xlf" datatype="plaintext" product-name="conpassione/eventlist" date="2025-04-08T14:43:56+02:00">
+		<header></header>
+		<body>
+			<trans-unit id="cp_archive.items.0.label">
+				<source>current</source>
+				<target>actuelles</target>
+			</trans-unit>
+			<trans-unit id="cp_archive.items.1.label">
+				<source>activs</source>
+				<target>actives</target>
+			</trans-unit>
+			<trans-unit id="cp_archive.label">
+				<source>Type of entries</source>
+				<target>Type de la liste</target>
+			</trans-unit>
+			<trans-unit id="cp_max_items.label">
+				<source>Max Items in List</source>
+				<target>Nombre maximal d&#39;entrées</target>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>List of Events</source>
+				<target>Liste des événements</target>
+			</trans-unit>
+			<trans-unit id="pages.label">
+				<source>Events from page</source>
+				<target>Événements de page</target>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Eventlist</source>
+				<target>Liste des événements</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

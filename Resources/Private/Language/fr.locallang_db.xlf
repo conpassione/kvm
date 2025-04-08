@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="fr" original="" datatype="plaintext" date="2025-03-26T14:48:16+01:00">
+    <file source-language="en" target-language="fr" original="" datatype="plaintext" date="2025-04-08T16:38:29+02:00">
         <body>
-            <trans-unit id="container.cp-event">
+            <trans-unit id="backendlayout.eventpage.title">
                 <source>Event</source>
                 <target>Evenement</target>
             </trans-unit>
-            <trans-unit id="container.cp-event.col201">
-                <source>Content</source>
-                <target>Contenu</target>
-            </trans-unit>
-            <trans-unit id="container.cp-event.description">
-                <source>Eventdescription</source>
-                <target>Evenement</target>
-            </trans-unit>
-            <trans-unit id="container.cp-event.col202">
-                <source>Aside</source>
-                <target>Info</target>
-            </trans-unit>
-            <trans-unit id="pagetype.event.label">
+            <trans-unit id="pages.label.event">
                 <source>Event</source>
                 <target>Evenement</target>
             </trans-unit>
