@@ -4,8 +4,9 @@
 
 @layer kvmstyles {
   /* reset */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--ff-h), sans-serif;
+
+  h1, h2 {
+    font-family: var(--ff);
     font-weight: var(--fw-regular);
   }
 
@@ -35,10 +36,6 @@
   .h2, .h3, .h4 {
     border: 0;
     margin-block-start: 0;
-  }
-
-  .h2 {
-    margin-block-end: 0.5em;
   }
 
   .h4 {

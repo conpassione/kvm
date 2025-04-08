@@ -175,7 +175,7 @@
     --ff: "Open SansL";
     --ff-condensed: "Open SansL";
     --ff-serif: "Open SansL";
-    --ff-h: "Open SansL";
+    --ff-h: "Open SansSB";
     --ff-nav: "Open Sans";
     --ff-mono: "Open Sans";
     --ff-symbol: "Symbols";
@@ -184,18 +184,18 @@
     --fw-mono: 300;
     --fw-bold: 600;
     /* font size */
-    --fs-minor: 16px;
-    --fs-regular: 18px;
-    --fs-regular--big: 24px;
+    --fs-fix--small: 16px;
+    --fs-fix--normal: 18px;
+    --fs-fix--big: 24px;
     /* line height */
     --lh-regular: 1.6;
     --lh-small: 1.2;
     --lh-h: var(--lh-small);
     /* regular font */
-    --fs-standard: clamp(var(--fs-regular), (100vw - 960px) / 100 + var(--fs-regular), var(--fs-regular--big));
-    --fs-big: calc(var(--fs-standard) * 1.125);
-    --fs-small: calc(var(--fs-standard) * 0.875);
-    font-size: var(--fs-standard);
+    --fs-regular: clamp(var(--fs-fix--normal), (100vw - 960px) / 100 + var(--fs-fix--normal), var(--fs-fix--big));
+    --fs-big: calc(var(--fs-regular) * 1.125);
+    --fs-small: calc(var(--fs-regular) * 0.875);
+    font-size: var(--fs-regular);
     line-height: var(--lh-regular);
   }
   .fs-big {
@@ -217,8 +217,8 @@
 /* headings */
 @layer kvmstyles {
   /* reset */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--ff-h), sans-serif;
+  h1, h2 {
+    font-family: var(--ff);
     font-weight: var(--fw-regular);
   }
   .h1-font,
@@ -244,9 +244,6 @@
   .h2, .h3, .h4 {
     border: 0;
     margin-block-start: 0;
-  }
-  .h2 {
-    margin-block-end: 0.5em;
   }
   .h4 {
     color: var(--clr-text);
