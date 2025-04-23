@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="it" original="labels.xlf" datatype="plaintext" product-name="conpassione/eventlist" date="2025-04-08T14:43:56+02:00">
+	<file source-language="en" target-language="de" original="Labels.xlf" datatype="plaintext" product-name="conpassione/homepage" date="2025-04-15T16:43:21+02:00">
 		<header></header>
 		<body>
 			<trans-unit id="cp_archive.items.0.label">
-				<source>current</source>
-				<target>corrente</target>
+				<source>activs</source>
+				<target>aktive</target>
 			</trans-unit>
 			<trans-unit id="cp_archive.items.1.label">
-				<source>activs</source>
-				<target>actifs</target>
+				<source>archived</source>
+				<target>archivierte</target>
 			</trans-unit>
 			<trans-unit id="cp_archive.label">
 				<source>Type of entries</source>
-				<target>Tipo della lista</target>
+				<target>Listentyp</target>
 			</trans-unit>
 			<trans-unit id="cp_max_items.label">
 				<source>Max Items in List</source>
-				<target>Numero massimo di voci</target>
+				<target>Maximale Anzahl Einträge</target>
 			</trans-unit>
 			<trans-unit id="description">
 				<source>List of Events</source>
-				<target>Elenco dei eventi</target>
+				<target>Liste von Veranstaltungen</target>
 			</trans-unit>
 			<trans-unit id="pages.label">
 				<source>Events from page</source>
-				<target>Eventi da pagina</target>
+				<target>Veranstaltungen von Seite(n)</target>
 			</trans-unit>
 			<trans-unit id="title">
 				<source>Eventlist</source>
-				<target>Elenco dei eventi</target>
+				<target>Veranstaltungsliste</target>
 			</trans-unit>
 		</body>
 	</file>
