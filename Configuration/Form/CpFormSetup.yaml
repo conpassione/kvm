@@ -1,5 +1,3 @@
 persistenceManager:
   allowedExtensionPaths:
     100: 'EXT:kvm/Resources/Private/Forms/'
-  allowSaveToExtensionPaths: false
-  allowDeleteFromExtensionPaths: false
