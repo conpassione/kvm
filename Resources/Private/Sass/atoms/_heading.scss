@@ -5,14 +5,20 @@
 @layer kvmstyles {
   /* reset */
 
-  h1, h2 {
-    font-family: var(--ff);
-    font-weight: var(--fw-regular);
+  h1 {
+    font-family: var(--ff-h);
+    font-weight: var(--fw-bold);
+    color:var(--clr-brand--primary);
   }
 
   .h1-font,
   .h1 {
     font-size: clamp(2.25rem, 2.75vw, 3.5rem);
+  }
+
+  h2 {
+    font-family: var(--ff);
+    font-weight: var(--fw-regular);
   }
 
   .h2-font,

@@ -15,7 +15,7 @@ fields:
     type: Radio
     defaultValue: 0
     items:
-      - label: 'actuelle'
+      - label: 'aktuelle'
         value: 0
       - label: 'archivierte'
         value: 1
