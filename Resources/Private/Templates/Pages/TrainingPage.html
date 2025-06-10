@@ -1,0 +1,73 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<f:layout name="Traininglayout-{page.pagerecord.layout}"/>
+
+
+<f:section name="Main">
+    <div class="trainingimageleft" id="ce{page.id}">
+        <f:cObject
+            data="{header: '', showcaption:'0', files: pagemedia}"
+            table="pages"
+            typoscriptObjectPath="tt_content.image"
+        />
+        <div class="trainingimageleft-text">
+             <h1 class="h1">{page.pageRecord.subtitle}</h1>
+
+            <span class="trainingteaser"><f:format.html>{page.pageRecord.cp_teaser}</f:format.html></span>
+            <f:format.html>{page.pageRecord.cp_description}</f:format.html>
+        </div>
+    </div>
+    <div class="trainingsection content-grid full-width-accent">
+        <div class="training" data-id="{settings.trainingPid}">
+            <div class="trainingnav">
+                <f:if condition="{prevNavigation}">
+                    <f:link.page pageUid="{prevNavigation.0.data.uid}"><span class="button iconfont">left</span>&nbsp;</f:link.page>
+                </f:if>
+                <f:if condition="{upNavigation}">
+                    <f:link.page pageUid="{upNavigation.0.data.uid}"><span class="button iconfont">up</span>&nbsp;</f:link.page>
+                </f:if>
+                <f:if condition="{nextNavigation}">
+                    <f:link.page pageUid="{nextNavigation.0.data.uid}"><span class="button iconfont">right</span></f:link.page>
+                </f:if>
+            </div>
+        </div>
+        <div class="traininginfo ">
+            <h2 class="h2">Trainingsinformationen</h2>
+            <ul>
+                <li class="traininginfo-item traininginfo-trainer">
+                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/ul.png')}" alt="Übungsleiter">
+                    <p>
+                        <f:for each="{trainers}" as="trainer">
+                            {trainer.data.first_name} {trainer.data.last_name}
+                        </f:for>
+                    </p>
+                </li>
+                <li class="traininginfo-item traininginfo-condition">
+                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/voraussetzung.png')}" alt="Voraussetzung">
+                    <p>{page.pageRecord.cp_conditions}</p>
+                </li>
+                <li class="traininginfo-item traininginfo-when">
+                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wenn.png')}" alt="Trainingszeiten">
+                    <p>{page.pageRecord.cp_when}</p>
+                </li>
+                <li class="traininginfo-item traininginfo-where">
+                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wo.png')}" alt="Trainingsort">
+                    <p>{page.pageRecord.cp_where}</p>
+                </li>
+                <li class="traininginfo-item traininginfo-fee">
+                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/kosten.png')}" alt="Kosten">
+                    <p>Mitglieder: {page.pageRecord.cp_memberfee}<br>Nichtmitglieder: {page.pageRecord.cp_nonmemberfee}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <f:for as="contentelement" each="{pagecontent.content.records}">
+        <f:cObject
+            data="{contentelement.rawRecord}"
+            table="tt_content"
+            typoscriptObjectPath="tt_content.{contentelement.CType}"
+        />
+    </f:for>
+</f:section>
+
+</html>

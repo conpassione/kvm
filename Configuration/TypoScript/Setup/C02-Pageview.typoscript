@@ -3,4 +3,18 @@ page.10 {
   paths {
     20 = EXT:kvm/Resources/Private/Templates/
   }
+
+  dataProcessing {
+    366501 = database-query
+    366501 {
+      table = fe_users
+      pidInList = 0
+      uidInList.data = field: trainer
+      as = trainers
+      dataProcessing {
+        10 = files
+        10.references.fieldName = image
+      }
+    }
+  }
 }

@@ -1,0 +1,73 @@
+@layer trainingstyles {
+  /* Created by Content Blocks */
+  .trainingimageleft {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: full-width;
+
+    .accent {
+      background-color: var(--clr-background-accent);
+    }
+
+    .brandcolor {
+      background-color: var(--clr-background-brandcolor);
+    }
+
+    .cp-image {
+      grid-column: full-width;
+      margin-block-end: 0;
+    }
+
+    .trainingimageleft-text {
+      grid-column: content;
+      padding-block-end: var(--gutter);
+      & p {
+        padding-block-end: var(--gutter);
+      }
+    }
+  }
+
+  .trainingnav {
+    padding-block: var(--gutter);
+  }
+
+  .trainingteaser {
+      font-weight: bold;
+  }
+
+  .traininginfo {
+    padding-block: var(--gutter);
+    & ul {
+      list-style-type: none;
+    }
+  }
+
+  .traininginfo-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: var(--gutter);
+    align-items: center;
+    padding-block: var(--gutter);
+  }
+
+  .traininginfo-trainer {
+    font-size: var(--fs-big);
+  }
+
+
+  @media (min-width: 800px) {
+    .trainingimageleft .cp-image {
+      grid-column: full-width-start / centerline;
+    }
+
+    .trainingimageleft .trainingimageleft-text {
+      grid-column: centerline / breakout-end;
+      align-self: center;
+      padding-inline-start: calc(var(--gutter) * 2);
+    }
+  }
+
+
+
+}

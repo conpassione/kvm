@@ -17,6 +17,16 @@ return [
         'source' => 'EXT:cpkm/Resources/Public/Icons/Event.svg',
     ],
 
+    'tx-conpassione-training' => [
+        'provider' => SvgIconProvider::class,
+        'source' => 'EXT:cpkm/Resources/Public/Icons/Training.svg',
+    ],
+
+    'tx-conpassione-backendlayout-trainingpage' => [
+        'provider' => SvgIconProvider::class,
+        'source' => 'EXT:cpkm/Resources/Public/Icons/Training.svg',
+    ],
+
 /*    'tx-myext-bitmapicon' => [
         'provider' => BitmapIconProvider::class,
         'source' => 'EXT:my_extension/Resources/Public/Icons/mybitmap.png',
