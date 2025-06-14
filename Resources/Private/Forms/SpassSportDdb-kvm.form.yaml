@@ -113,7 +113,14 @@ renderables:
             identifier: mobile
             label: 'Mobiltelefon'
             properties:
-              elementDescription: ''
+              elementDescription: 'Mobiltelefon oder Festnetz'
+              fluidAdditionalAttributes:
+                required: required
+              validationErrorMessages:
+                - code: 1221559976
+                  message: 'Eine Telefonnummer für kurzfristige Mitteilungen ist wichtig.'
+            validators:
+              - identifier: NotEmpty
           - identifier: email
             defaultValue: ''
             type: Text

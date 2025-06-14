@@ -1,0 +1,18 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:cb="http://typo3.org/ns/Friendsoftypo3/ContentBlocks/ViewHelpers">
+
+<f:asset.css identifier="trainingpage-css" href="{cb:assetPath()}/backend.css"/>
+
+<div class="cp_trainingdescription">
+    <p>Das sind die Übungsleiter für <f:format.raw>{data.subtitle}</f:format.raw>:<br>
+    <strong><f:for as="ul" each="{data.trainer}">
+        {ul.first_name} {ul.last_name}<br>
+    </f:for></strong></p>
+    <p>Trainingszeit: {data.cp_when}<br>
+    Trainingsort: {data.cp_where}</p>
+    <f:format.raw>{data.cp_teaser}</f:format.raw>
+
+</div>
+
+</html>
