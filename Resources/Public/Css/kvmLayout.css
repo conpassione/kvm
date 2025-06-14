@@ -450,7 +450,7 @@
     text-decoration: none;
   }
   .event {
-    margin-block-start: var(--gutter);
+    margin-block: var(--gutter);
   }
   .eventinfo {
     margin-left: 110px;
