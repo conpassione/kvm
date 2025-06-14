@@ -1,5 +1,5 @@
 identifier: spasssportd-db-kvm
-label: 'SpassSport Anmeldung'
+label: 'KVM SpassSport Anmeldung'
 type: Form
 prototypeName: standard
 renderingOptions:
@@ -61,7 +61,7 @@ finishers:
           mapOnDatabaseColumn: 'skg'
   - identifier: Confirmation
     options:
-      message: 'Besten Dank für Deine Anfrage. Du bekommst innerhalb einer Woche Antwort von uns.'
+      message: 'Besten Dank für Deine Anmeldung.'
       contentElementUid: ''
 renderables:
   - type: Page

@@ -1,5 +1,5 @@
-identifier: simple-messaged-db-kvm
-label: 'KVM Einfaches Anfrageformular mit Datenbank'
+identifier: plauschparcoursd-db-kvm
+label: 'KVM PlauschPrcours Anmeldung'
 type: Form
 prototypeName: standard
 renderingOptions:
@@ -7,7 +7,7 @@ renderingOptions:
 finishers:
   - identifier: EmailToSender
     options:
-      subject: 'Bestätigungsmail'
+      subject: 'Bestätigung Anmeldung Plauschparcours für {dog}'
       recipients:
         '{email}': '{lastname} {firstname}'
       senderAddress: 'info@kv-muensingen.ch'
@@ -17,14 +17,14 @@ finishers:
       title: 'Deine Anfrage'
   - identifier: EmailToReceiver
     options:
-      subject: 'Anfrage von {lastname} {firstname}'
+      subject: 'Anmeldung Plauschparcours von {lastname} {firstname} - {dog}'
       recipients:
         info@kv-muensingen.ch: 'Kynologischer Verein Münsingen'
       senderAddress: '{email}'
       senderName: '{lastname} {firstname}'
       addHtmlPart: true
       attachUploads: false
-      title: 'Anfrage via Website von {firstname} {lastname}'
+      title: 'Anmeldung Plauschparcours via Website von {firstname} {lastname} - {dog}'
   - identifier: SaveToDatabase
     options:
       table: 'tx_conpassione_registrationform'
@@ -45,22 +45,32 @@ finishers:
           mapOnDatabaseColumn: 'mobile'
         email:
           mapOnDatabaseColumn: 'email'
-        message:
-          mapOnDatabaseColumn: 'message'
         event:
           mapOnDatabaseColumn: 'event'
+        dog:
+          mapOnDatabaseColumn: 'dog'
+        breed:
+          mapOnDatabaseColumn: 'breed'
+        birthdate:
+          mapOnDatabaseColumn: 'birthdate'
   - identifier: Confirmation
     options:
-      message: 'Besten Dank für Deine Anfrage. Du bekommst innerhalb einer Woche Antwort von uns.'
+      message: 'Besten Dank für Deine Anmeldung'
       contentElementUid: ''
 renderables:
   - type: Page
     identifier: smpage-1
     renderables:
+      - identifier: info1
+        type: StaticText
+        label: ''
+        properties:
+          text: 'ACHTUNG: pro Hund ist eine Anmeldung erforderlich!'
+          elementClassAttribute: 'cp-accent cp-bold'
       - identifier: event
         defaultValue: 'ERROR: Unable to get Eventname'
         type: Text
-        label: 'Anmeldung für Event'
+        label: 'Anmeldung für'
         properties:
           containerClassAttribute: 'form-event-title'
           fluidAdditionalAttributes:
@@ -101,9 +111,16 @@ renderables:
           - defaultValue: ''
             type: Text
             identifier: mobile
-            label: 'Mobiltelefon'
+            label: 'Telefon'
             properties:
-              elementDescription: ''
+              elementDescription: 'Mobiltelefon oder Festnetz'
+              fluidAdditionalAttributes:
+                required: required
+              validationErrorMessages:
+                - code: 1221559976
+                  message: 'Eine Telefonnummer für kurzfristige Mitteilungen ist wichtig.'
+            validators:
+              - identifier: NotEmpty
           - identifier: email
             defaultValue: ''
             type: Text
@@ -117,12 +134,35 @@ renderables:
             validators:
               - identifier: EmailAddress
               - identifier: NotEmpty
-      - identifier: message
-        defaultValue: ''
-        type: Textarea
-        label: 'Mitteilung'
-      - type: Checkbox
-        identifier: confirmation
+      - identifier: gridrow-5
+        type: GridRow
+        label: 'Hund'
+        renderables:
+          - identifier: dog
+            type: Text
+            label: 'Hundename'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+              validationErrorMessages:
+                - code: 1221559977
+                  message: 'Der Hundename ist zwingend nötig.'
+            validators:
+              - identifier: NotEmpty
+          - identifier: breed
+            type: Text
+            label: 'Rasse'
+          - identifier: birthdate
+            defaultValue: ''
+            type: Date
+            label: 'Geburtsdatum Hund'
+            properties:
+              fluidAdditionalAttributes:
+                min: ''
+                max: ''
+                step: 1
+      - identifier: confirmation
+        type: Checkbox
         label: 'Ich bin einverstanden, dass die erfassten Daten für die Zwecke der Veranstaltung verwendet werden.'
         properties:
           elementDescription: ''
