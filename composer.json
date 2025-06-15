@@ -20,9 +20,11 @@
 	"prefer-stable" : true,
 	"require": {
 		"conpassione/cpdevsite": "*",
+		"hauerheinrich/hh_openstreetmap": "^1.1",
 		"typo3/cms-core": "^13.4"
 	},
 	"require-dev": {
+		"roave/security-advisories": "dev-latest",
 		"typo3/testing-framework": "*"
 	},
 	"autoload": {
