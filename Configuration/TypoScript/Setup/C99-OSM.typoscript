@@ -1,6 +1,3 @@
-
-@import 'EXT:hh_openstreetmap/Configuration/TypoScript/*.typoscript'
-
 tt_content.hh_openstreetmap_openstreetmap < lib.contentElement
 tt_content.hh_openstreetmap_openstreetmap {
   layoutRootPaths {

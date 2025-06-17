@@ -486,7 +486,7 @@
   }
   .eventdate .eventdate--month,
   .eventdate .eventdate--year {
-    font-size: calc(var(--fs-small) * 0.75);
+    font-size: calc(var(--fs-small) * 0.8);
   }
   .eventtitle {
     font-weight: var(--fw-bold);
@@ -497,6 +497,8 @@
 }
 @layer trainingstyles {
   /* Created by Content Blocks */
+  /* trainingslist */
+  /* trainingspage */
   .trainingimageleft {
     display: grid;
     grid-template-columns: subgrid;

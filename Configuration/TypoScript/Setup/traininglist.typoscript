@@ -1,0 +1,18 @@
+# CType: traininglist
+
+tt_content.traininglist {
+  dataProcessing {
+    200 = database-query
+    200 {
+      if {
+        value.data = field : cp_archive
+        equals = 0
+      }
+      table = pages
+      where = ({#doktype} = 36650022)
+      recursive = 5
+      pidInList.data = field : pages
+      as = traininglist
+    }
+  }
+}

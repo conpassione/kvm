@@ -1,0 +1,30 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+>
+
+<f:asset.css href="{cb:assetPath()}/frontend.css" identifier="traininglist-css"/>
+
+<div class="traininglist" id="traininglist{data.uid}">
+    <f:cObject
+        data="{data}"
+        table="tt_content"
+        typoscriptObjectPath="tt_content.header"
+    />
+    <div class="trainingcards">
+        <f:for as="training" each="{traininglist}">
+            <div class="trainingcard" id="training{training.data.uid}">
+                <f:link.page pageUid="{training.data.uid}">
+                    <div class="traininginfo">
+                        <h3 class="h3 .h3 trainingtitle">
+                            <f:format.html>{training.data.subtitle}</f:format.html>
+                        </h3>
+                        <div class="trainingteaser">
+                            <f:format.html>{training.data.cp_teaser}</f:format.html>
+                        </div>
+                    </div>
+                </f:link.page>
+                <f:link.page pageUid="{training.data.uid}" class="button">Info >></f:link.page>
+            </div>
+        </f:for>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="it" original="Labels.xlf" datatype="plaintext" product-name="conpassione/homepage" date="2025-06-17T09:51:55+02:00">
+		<header></header>
+		<body>
+			<trans-unit id="cp_archive.items.0.label">
+				<source>activs</source>
+				<target>attivi</target>
+			</trans-unit>
+			<trans-unit id="cp_archive.items.1.label">
+				<source>archived</source>
+				<target>archivati</target>
+			</trans-unit>
+			<trans-unit id="cp_archive.label">
+				<source>Type of entries</source>
+				<target>Tipo della lista</target>
+			</trans-unit>
+			<trans-unit id="cp_max_items.label">
+				<source>Max Items in List</source>
+				<target>Numero massimo di voci</target>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>List of Trainings</source>
+				<target>Elenco dei corsi/allenamenti</target>
+			</trans-unit>
+			<trans-unit id="pages.label">
+				<source>Trainings from page</source>
+				<target>Corsi/Allenamenti della pagina</target>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Trainingslist</source>
+				<target>Elenco dei corsi/allenamenti</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
