@@ -71,5 +71,11 @@
   .eventschedule {
     padding-block: var(--gutter);
   }
+
+  .button--placeholder {
+    background-color: transparent;
+    outline: 2px solid var(--clr-brand--primary);
+    outline-offset: -2px;
+  }
 }
 

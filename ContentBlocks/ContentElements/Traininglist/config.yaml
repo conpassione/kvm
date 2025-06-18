@@ -11,7 +11,7 @@ fields:
     range:
       lower: 0
       upper: 999
-  - identifier: cp_archive
+  - identifier: cp_status
     type: Radio
     defaultValue: 0
     items:

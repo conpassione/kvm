@@ -11,7 +11,7 @@
             table="tt_content"
         />
     </f:for>
-    <f:render partial="Menu/SubMenu" arguments="{submenu: submenu}"/>
+    <f:render arguments="{submenu: submenu, cp_status: page.pagerecord.cp_status}" partial="Menu/SubMenu"/>
 </f:section>
 
 </html>

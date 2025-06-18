@@ -20,35 +20,45 @@
     <div class="trainingsection content-grid full-width-accent">
         <div class="training" data-id="{settings.trainingPid}">
             <div class="trainingnav">
-                <f:if condition="{prevNavigation}">
-                    <f:link.page pageUid="{prevNavigation.0.data.uid}"><span class="button iconfont">left</span>&nbsp;</f:link.page>
-                </f:if>
                 <f:if condition="{upNavigation}">
-                    <f:link.page pageUid="{upNavigation.0.data.uid}"><span class="button iconfont">up</span>&nbsp;</f:link.page>
+                    <f:link.page pageUid="{upNavigation.0.data.uid}"><span class="button iconfont">up</span></f:link.page>
+                </f:if>
+                <f:if condition="{prevNavigation}">
+                    <f:then>
+                        <f:link.page pageUid="{prevNavigation.0.data.uid}"><span class="button iconfont">left</span></f:link.page>
+                    </f:then>
+                    <f:else>
+                        <span class="button iconfont button--placeholder">&nbsp;</span>
+                    </f:else>
                 </f:if>
                 <f:if condition="{nextNavigation}">
-                    <f:link.page pageUid="{nextNavigation.0.data.uid}"><span class="button iconfont">right</span></f:link.page>
+                    <f:then>
+                        <f:link.page pageUid="{nextNavigation.0.data.uid}"><span class="button iconfont">right</span></f:link.page>
+                    </f:then>
+                    <f:else>
+                        <span class="button iconfont button--placeholder">&nbsp;</span>
+                    </f:else>
                 </f:if>
             </div>
         </div>
         <div class="traininginfo ">
-            <h2 class="h2">Trainingsinformationen</h2>
+            <h2 class="h2">Informationen</h2>
             <ul>
                 <li class="traininginfo-item traininginfo-trainer">
                     <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/ul.png')}" alt="Übungsleiter">
                     <p>
                         <f:for each="{trainers}" as="trainer">
-                            {trainer.data.first_name} {trainer.data.last_name}
+                            {trainer.data.first_name} {trainer.data.last_name}, <a href="tel:{trainer.data.mobile}" class="phone-link--icon">{trainer.data.mobile}</a><br>
                         </f:for>
                     </p>
                 </li>
                 <li class="traininginfo-item traininginfo-condition">
                     <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/voraussetzung.png')}" alt="Voraussetzung">
-                    <p>{page.pageRecord.cp_conditions}</p>
+                    <f:format.html>{page.pageRecord.cp_conditions}</f:format.html>
                 </li>
                 <li class="traininginfo-item traininginfo-when">
                     <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wenn.png')}" alt="Trainingszeiten">
-                    <p>{page.pageRecord.cp_when}</p>
+                    <f:format.html>{page.pageRecord.cp_when}</f:format.html>
                 </li>
                 <li class="traininginfo-item traininginfo-where">
                     <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wo.png')}" alt="Trainingsort">

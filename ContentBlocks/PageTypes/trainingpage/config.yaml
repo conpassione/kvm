@@ -36,12 +36,16 @@ fields:
         type: Linebreak
       - identifier: cp_conditions
         label: Voraussetzungen
-        type: Text
-      - identifier: lb3
-        type: Linebreak
+        type: Textarea
+        rows: 6
+        enableRichtext: true
       - identifier: cp_when
         label: Wann
-        type: Text
+        type: Textarea
+        rows: 6
+        enableRichtext: true
+      - identifier: lb3
+        type: Linebreak
       - identifier: cp_where
         label: Wo
         type: Text

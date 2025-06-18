@@ -494,6 +494,11 @@
   .eventschedule {
     padding-block: var(--gutter);
   }
+  .button--placeholder {
+    background-color: transparent;
+    outline: 2px solid var(--clr-brand--primary);
+    outline-offset: -2px;
+  }
 }
 @layer trainingstyles {
   /* Created by Content Blocks */
@@ -520,6 +525,9 @@
   }
   .trainingimageleft .trainingimageleft-text p {
     padding-block-end: var(--gutter);
+  }
+  .trainingimageleft .trainingimageleft-text > h1 {
+    color: var(--clr-brand--primary);
   }
   .trainingnav {
     padding-block: var(--gutter);
