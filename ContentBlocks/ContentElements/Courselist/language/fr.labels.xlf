@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="fr" original="Labels.xlf" datatype="plaintext" product-name="conpassione/homepage" date="2025-06-26T20:10:41+02:00">
+	<file source-language="en" target-language="fr" original="Labels.xlf" datatype="plaintext" product-name="conpassione/homepage" date="2025-06-26T20:09:17+02:00">
 		<header></header>
 		<body>
 			<trans-unit id="cp_archive.items.0.label">
@@ -21,15 +21,15 @@
 			</trans-unit>
 			<trans-unit id="description">
 				<source>List of Trainings</source>
-				<target>Liste des entraînements</target>
+				<target>Liste des cours</target>
 			</trans-unit>
 			<trans-unit id="pages.label">
-				<source>Trainings from page</source>
-				<target>Entraînements de page</target>
+				<source>Courses from page</source>
+				<target>Cours de page</target>
 			</trans-unit>
 			<trans-unit id="title">
-				<source>Trainingslist</source>
-				<target>Liste des entraînements</target>
+				<source>Courselist</source>
+				<target>Liste des cours</target>
 			</trans-unit>
 		</body>
 	</file>

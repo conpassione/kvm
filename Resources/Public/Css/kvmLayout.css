@@ -503,6 +503,20 @@
 @layer trainingstyles {
   /* Created by Content Blocks */
   /* trainingslist */
+  .trainingcards {
+    margin-block-end: var(--gutter);
+  }
+  .trainingcards a {
+    text-decoration: none;
+  }
+  .trainingcard {
+    border: 1px solid var(--clr-brand--primary);
+    margin-bottom: var(--gutter);
+    padding: var(--gutter);
+  }
+  .trainingcard .traininginfolist {
+    padding-block: calc(var(--gutter) / 2);
+  }
   /* trainingspage */
   .trainingimageleft {
     display: grid;

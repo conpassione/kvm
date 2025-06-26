@@ -1,0 +1,33 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+>
+
+<f:asset.css href="{cb:assetPath()}/frontend.css" identifier="courselist-css"/>
+
+<div class="courselist" id="courselist{data.uid}">
+    <f:cObject
+        data="{data}"
+        table="tt_content"
+        typoscriptObjectPath="tt_content.header"
+    />
+    <div class="coursescards">
+        <f:if condition="!{courselist}">
+            <p>Aktuell keine Kurse geplant</p>
+        </f:if>
+        <f:for as="course" each="{courselist}">
+            <div class="coursecard" id="course{course.data.uid}">
+                <f:link.page pageUid="{course.data.uid}">
+                    <div class="courseinfo">
+                        <h3 class="h3 .h3 coursetitle">
+                            <f:format.html>{course.data.subtitle}</f:format.html>
+                        </h3>
+                        <div class="courseteaser">
+                            <f:format.html>{course.data.cp_teaser}</f:format.html>
+                        </div>
+                    </div>
+                </f:link.page>
+                <f:link.page pageUid="{course.data.uid}" class="button">Info >></f:link.page>
+            </div>
+        </f:for>
+    </div>
+</div>

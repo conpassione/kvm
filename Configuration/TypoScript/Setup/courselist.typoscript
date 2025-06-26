@@ -1,0 +1,30 @@
+# CType: courselist
+
+tt_content.courselist {
+  dataProcessing {
+    200 = database-query
+    200 {
+      if {
+        value.data = field : cp_archive
+        equals = 0
+      }
+      table = pages
+      where = ({#pages.doktype} = 36650023) and ({#pages.cp_archive} = 0)
+      recursive = 5
+      pidInList.data = field : pages
+      as = courselist
+    }
+    210 = database-query
+    210 {
+      if {
+        value.data = field : cp_archive
+        equals = 1
+      }
+      table = pages
+      where = ({#pages.doktype} = 36650023) and ({#pages.cp_archive} = 1)
+      recursive = 5
+      pidInList.data = field : pages
+      as = courselist
+    }
+  }
+}

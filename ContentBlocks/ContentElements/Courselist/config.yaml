@@ -1,5 +1,5 @@
-name: conpassione/traininglist
-typeName: traininglist
+name: conpassione/courselist
+typeName: courselist
 group: z-cpextensions
 prefixFields: false
 fields:
@@ -11,6 +11,14 @@ fields:
     range:
       lower: 0
       upper: 999
+  - identifier: cp_archive
+    type: Radio
+    defaultValue: 0
+    items:
+      - label: 'aktuelle'
+        value: 0
+      - label: 'archivierte'
+        value: 1
   - identifier: pages
     type: Relation
     allowed: 'pages'

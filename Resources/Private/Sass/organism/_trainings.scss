@@ -2,7 +2,27 @@
   /* Created by Content Blocks */
 
   /* trainingslist */
+  .traininglist {
 
+  }
+
+  .trainingcards {
+    margin-block-end: var(--gutter);
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .trainingcard {
+    border: 1px solid var(--clr-brand--primary);
+    margin-bottom: var(--gutter);
+    padding: var(--gutter);
+
+    .traininginfolist {
+      padding-block: calc(var(--gutter) / 2);
+    }
+  }
 
   /* trainingspage */
   .trainingimageleft {

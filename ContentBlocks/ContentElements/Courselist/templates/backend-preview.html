@@ -2,9 +2,9 @@
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 >
 
-<f:asset.css href="{cb:assetPath()}/backend-preview.css" identifier="cptraining-backend-preview"/>
+<f:asset.css href="{cb:assetPath()}/backend-preview.css" identifier="cpcourse-backend-preview"/>
 
-<p><f:translate key="{cb:languagePath()}:be.description"/><br>Trainings von Seite(n):<br>
+<p><f:translate key="{cb:languagePath()}:be.description"/><br>Kurse von Seite(n):<br>
     <f:for each="{data.pages}" as="page">
         [{page.uid}] {page.title}<br>
     </f:for>

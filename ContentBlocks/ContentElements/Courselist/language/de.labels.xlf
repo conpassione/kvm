@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="fr" original="Labels.xlf" datatype="plaintext" product-name="conpassione/homepage" date="2025-06-26T20:10:41+02:00">
+	<file source-language="en" target-language="de" original="Labels.xlf" datatype="plaintext" product-name="conpassione/homepage" date="2025-06-26T20:09:17+02:00">
 		<header></header>
 		<body>
 			<trans-unit id="cp_archive.items.0.label">
 				<source>activs</source>
-				<target>actives</target>
+				<target>aktive</target>
 			</trans-unit>
 			<trans-unit id="cp_archive.items.1.label">
 				<source>archived</source>
-				<target>archivées</target>
+				<target>archivierte</target>
 			</trans-unit>
 			<trans-unit id="cp_archive.label">
 				<source>Type of entries</source>
-				<target>Type de la liste</target>
+				<target>Listentyp</target>
 			</trans-unit>
 			<trans-unit id="cp_max_items.label">
 				<source>Max Items in List</source>
-				<target>Nombre maximal d&#39;entrées</target>
+				<target>Maximale Anzahl Einträge</target>
 			</trans-unit>
 			<trans-unit id="description">
 				<source>List of Trainings</source>
-				<target>Liste des entraînements</target>
+				<target>Liste der Kurse</target>
 			</trans-unit>
 			<trans-unit id="pages.label">
-				<source>Trainings from page</source>
-				<target>Entraînements de page</target>
+				<source>Courses from page</source>
+				<target>Kurse von Seite(n)</target>
 			</trans-unit>
 			<trans-unit id="title">
-				<source>Trainingslist</source>
-				<target>Liste des entraînements</target>
+				<source>Courselist</source>
+				<target>Kursliste</target>
 			</trans-unit>
 		</body>
 	</file>

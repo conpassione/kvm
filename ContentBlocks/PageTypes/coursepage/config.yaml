@@ -71,3 +71,13 @@ fields:
       - identifier: cp_nonmemberfee
         label: Kosten Nichtmitglieder
         type: Text
+      - identifier: lb5
+        type: Linebreak
+      - identifier: cp_archive
+        type: Radio
+        defaultValue: 0
+        items:
+          - label: 'aktuelle'
+            value: 0
+          - label: 'archivierte'
+            value: 1

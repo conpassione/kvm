@@ -11,10 +11,13 @@
         typoscriptObjectPath="tt_content.header"
     />
     <div class="trainingcards">
+        <f:if condition="!{traininglist}">
+            <p>Aktuell keine Trainings geplant</p>
+        </f:if>
         <f:for as="training" each="{traininglist}">
             <div class="trainingcard" id="training{training.data.uid}">
                 <f:link.page pageUid="{training.data.uid}">
-                    <div class="traininginfo">
+                    <div class="traininginfolist">
                         <h3 class="h3 .h3 trainingtitle">
                             <f:format.html>{training.data.subtitle}</f:format.html>
                         </h3>
@@ -23,7 +26,7 @@
                         </div>
                     </div>
                 </f:link.page>
-                <f:link.page pageUid="{training.data.uid}" class="button">Info >></f:link.page>
+                <f:link.page pageUid="{training.data.uid}" class="button"><span class="iconfont">right</span>&nbsp;Mehr Infos</f:link.page>
             </div>
         </f:for>
     </div>
