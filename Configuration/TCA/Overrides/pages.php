@@ -15,7 +15,7 @@ call_user_func(static function(): void {
 
     // Bugfix for content-blocks
     // List all pages ot add the standard fields
-    $doktypes = '36650021,36650022';
+    $doktypes = '36650021,36650022,36650023';
 
     // update TCA (add abstract) to unify BE for Standard and Custom Pages
     ExtensionManagementUtility::addToAllTCAtypes(

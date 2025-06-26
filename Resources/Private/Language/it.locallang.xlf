@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="it" original="locallang.xlf" datatype="plaintext" product-name="conpassione/cpkm" date="2025-04-08T18:44:28+02:00">
+	<file source-language="en" target-language="it" original="locallang.xlf" datatype="plaintext" product-name="conpassione/cpkm" date="2025-06-26T20:01:47+02:00">
 		<body>
+			<trans-unit id="cours.location">
+				<source>Location</source>
+				<target>Sede</target>
+			</trans-unit>
+			<trans-unit id="course.begin">
+				<source>Day 1</source>
+				<target>Giorno 1</target>
+			</trans-unit>
+			<trans-unit id="course.begin2">
+				<source>Day 2</source>
+				<target>Giorno 2</target>
+			</trans-unit>
+			<trans-unit id="course.begin3">
+				<source>Day 3</source>
+				<target>Giorno 3</target>
+			</trans-unit>
+			<trans-unit id="event.begin">
+				<source>Begin</source>
+				<target>Inizio</target>
+			</trans-unit>
 			<trans-unit id="event.end">
 				<source>End</source>
 				<target>Fine</target>
@@ -9,10 +29,6 @@
 			<trans-unit id="event.location">
 				<source>Location</source>
 				<target>Sede</target>
-			</trans-unit>
-			<trans-unit id="event.start">
-				<source>Start</source>
-				<target>Inizio</target>
 			</trans-unit>
 		</body>
 	</file>

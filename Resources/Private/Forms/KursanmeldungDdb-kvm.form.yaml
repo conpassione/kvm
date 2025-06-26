@@ -1,5 +1,5 @@
-identifier: plauschparcoursd-db-kvm
-label: 'KVM PlauschPrcours Anmeldung'
+identifier: coursed-db-kvm
+label: 'KVM Kursanmeldung'
 type: Form
 prototypeName: standard
 renderingOptions:
@@ -7,24 +7,24 @@ renderingOptions:
 finishers:
   - identifier: EmailToSender
     options:
-      subject: 'Bestätigung Anmeldung Plauschparcours für {dog}'
+      subject: 'Bestätigung Kursanmeldung - {dog}'
       recipients:
         '{email}': '{lastname} {firstname}'
       senderAddress: 'info@kv-muensingen.ch'
       senderName: 'Kynologischer Verein Münsingen'
       addHtmlPart: true
       attachUploads: false
-      title: 'Plauschparcours KVM - {dog}'
+      title: '{event}: Bestätigung Kursanmeldung'
   - identifier: EmailToReceiver
     options:
-      subject: 'Anmeldung Plauschparcours von {lastname} {firstname} - {dog}'
+      subject: '{event}: Kursanmeldung von {lastname} {firstname} - {dog}'
       recipients:
         info@kv-muensingen.ch: 'Kynologischer Verein Münsingen'
       senderAddress: '{email}'
       senderName: '{lastname} {firstname}'
       addHtmlPart: true
       attachUploads: false
-      title: 'Anmeldung Plauschparcours via Website von {firstname} {lastname} - {dog}'
+      title: '{event}: Kursanmeldung via Website von {firstname} {lastname} - {dog}'
   - identifier: SaveToDatabase
     options:
       table: 'tx_conpassione_registrationform'
@@ -163,7 +163,7 @@ renderables:
                 step: 1
       - identifier: confirmation
         type: Checkbox
-        label: 'Ich bin einverstanden, dass die erfassten Daten für die Zwecke der Veranstaltung verwendet werden.'
+        label: 'Ich bin einverstanden, dass die erfassten Daten für die Zwecke des Kurses verwendet werden.'
         properties:
           elementDescription: ''
           fluidAdditionalAttributes:

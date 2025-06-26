@@ -54,11 +54,15 @@
                 </li>
                 <li class="traininginfo-item traininginfo-condition">
                     <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/voraussetzung.png')}" alt="Voraussetzung">
-                    <f:format.html>{page.pageRecord.cp_conditions}</f:format.html>
+                    <div>
+                        <f:format.html>{page.pageRecord.cp_conditions}</f:format.html>
+                    </div>
                 </li>
                 <li class="traininginfo-item traininginfo-when">
                     <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wenn.png')}" alt="Trainingszeiten">
-                    <f:format.html>{page.pageRecord.cp_when}</f:format.html>
+                    <div>
+                        <f:format.html>{page.pageRecord.cp_when}</f:format.html>
+                    </div>
                 </li>
                 <li class="traininginfo-item traininginfo-where">
                     <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wo.png')}" alt="Trainingsort">

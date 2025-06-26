@@ -1,12 +1,12 @@
 mod {
   web_layout {
     BackendLayouts {
-      TrainingPage {
-        title = LLL:EXT:kvm/Resources/Private/Language/locallang_db.xlf:backendlayout.trainingpage.title
-        icon = tx-conpassione-backendlayout-trainingpage
+      CoursePage {
+        title = LLL:EXT:kvm/Resources/Private/Language/locallang_db.xlf:backendlayout.coursepage.title
+        icon = tx-conpassione-backendlayout-coursepage
         config {
           backend_layout {
-            doktype = 36650022
+            doktype = 36650023
             colCount = 1
             rowCount = 3
             rows {

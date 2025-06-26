@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" original="labels.xlf" datatype="plaintext" product-name="conpassione/trainingpage" date="2025-06-23T15:37:51+02:00">
+		<header></header>
+		<body>
+			<trans-unit id="cp_bdate.label">
+				<source>Day 1</source>
+			</trans-unit>
+			<trans-unit id="cp_bdate2.label">
+				<source>Day 2</source>
+			</trans-unit>
+			<trans-unit id="cp_bdate3.label">
+				<source>Day 3</source>
+			</trans-unit>
+			<trans-unit id="cp_city.label">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="cp_location.label">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="cp_zip.label">
+				<source>ZIP</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Course definition and description</source>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Coursepage</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

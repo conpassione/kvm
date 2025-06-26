@@ -1,0 +1,73 @@
+name: conpassione/coursepage
+typeName: 36650023
+title: Coursepage
+group: conpassione
+description: Seite mit Informationen zu einem angebotenen Kurs
+prefixFields: false
+fields:
+  - identifier: subtitle
+    useExistingField: true
+  - identifier: courseinfos
+    type: Palette
+    label: Training-Info
+    fields:
+      - identifier: trainer
+        label: Übungsleiter
+        type: Select
+        renderType: selectMultipleSideBySide
+        foreign_table: fe_users
+        foreign_table_where: 'AND {#fe_users}.{#status}>0'
+        labelField: last_name,first_name,email2
+        minitems: 1
+        maxitems: 10
+      - identifier: lb1
+        type: Linebreak
+      - identifier: cp_bdate
+        type: DateTime
+        format: datetime
+        label: Day 1
+      - identifier: cp_bdate2
+        type: DateTime
+        format: datetime
+        label: Day 2
+      - identifier: cp_bdate3
+        type: DateTime
+        format: datetime
+        label: Day 3
+      - identifier: lbteaser
+        type: Linebreak
+      - identifier: cp_teaser
+        label: Teaser
+        type: Textarea
+        rows: 6
+        enableRichtext: true
+      - identifier: cp_description
+        label: Beschrieb
+        type: Textarea
+        rows: 6
+        enableRichtext: true
+      - identifier: lb2
+        type: Linebreak
+      - identifier: cp_conditions
+        label: Voraussetzungen
+        type: Textarea
+        rows: 6
+        enableRichtext: true
+      - identifier: cp_when
+        label: Wann
+        type: Textarea
+        rows: 6
+        enableRichtext: true
+      - identifier: lb3
+        type: Linebreak
+      - identifier: cp_where
+        label: Wo
+        type: Text
+      - identifier: lb4
+        type: Linebreak
+      - identifier: cp_memberfee
+        label: Kosten Mitglieder
+        type: Text
+      - identifier: cp_nonmemberfee
+        label: Kosten Nichtmitglieder
+        type: Text

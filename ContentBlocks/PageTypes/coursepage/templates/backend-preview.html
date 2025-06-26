@@ -4,17 +4,19 @@
 
 <f:asset.css identifier="trainingpage-css" href="{cb:assetPath()}/backend.css"/>
 
-<div class="cp_trainingdescription">
-    <div class="cp cp_trainingwhen">
-        <p>Übungsleiter:</p>
+<div class="cp_coursedescription">
+    <div class="cp_coursewhen">
+        <p>Kursleiter:</p>
         <p><strong><f:for as="ul" each="{data.trainer}">
             {ul.first_name} {ul.last_name}<br>
         </f:for></strong></p>
     </div>
-    <div class="cp_trainingwhen">
-        <p>Trainingszeit:</p>
+    <p>Tag 1: <f:format.date format="d.m.Y">{data.cp_bdate}</f:format.date>&nbsp; Tag 2: <f:format.date format="d.m.Y">{data.cp_bdate2}</f:format.date>&nbsp; Tag 3: <f:format.date
+        format="d.m.Y">{data.cp_bdate3}</f:format.date></p>
+    <div class="cp_coursewhen">
+        <p>Zeit:</p>
         <div>
-            <f:format.raw>{data.cp_when}</f:format.raw>
+            <f:sanitize.html>{data.cp_when}</f:sanitize.html>
         </div>
     </div>
     <p>Trainingsort: {data.cp_where}</p>

@@ -14,7 +14,7 @@ finishers:
       senderName: 'Kynologischer Verein Münsingen'
       addHtmlPart: true
       attachUploads: false
-      title: 'Deine Anfrage'
+      title: 'SpassSport-Wettkampf KVM - {dog}'
   - identifier: EmailToReceiver
     options:
       subject: 'Anmeldung SpassSport von {lastname} {firstname}'

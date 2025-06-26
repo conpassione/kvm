@@ -1,9 +1,9 @@
-.cp_trainingdescription {
+.cp_coursedescription {
   padding: 1rem;
-  border: 1px solid forestgreen;
+  border: 1px solid #3b2994;
 }
 
-.cp_trainingwhen {
+.cp_coursewhen {
   display: grid;
   grid-gap: 16px;
   grid-template-columns: min-content 1fr;
