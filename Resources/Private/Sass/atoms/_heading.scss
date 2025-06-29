@@ -30,11 +30,15 @@
     font-size: clamp(2rem, 2.25vw, 3rem);
   }
   .h3-font,
-  .h4-font,
-  .h3,
-  .h4 {
+  .h3 {
     font-size: clamp(1.1rem, 1.5vw, 2rem);
   }
+
+  .h4-font,
+  .h4 {
+    font-size: clamp(1.1rem, 1vw, 1.25rem);
+  }
+
 
   .titelclaim {
     color: var(--clr-mnu--active);
