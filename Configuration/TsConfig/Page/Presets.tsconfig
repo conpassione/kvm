@@ -14,5 +14,9 @@ mod.web_list.downloadPresets {
       label = SpassSportAnmeldungen
       columns = lastname,firstname,mobile,email,event,message,class,dog,skg
     }
+    3 {
+      label = PlauschparcourAnmeldung
+      columns = lastname,firstname,mobile,email,dog,breed,birthdate,event
+    }
   }
 }
