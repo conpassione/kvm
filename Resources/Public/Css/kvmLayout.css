@@ -452,7 +452,7 @@
     text-decoration: none;
   }
   .event {
-    margin-block: var(--gutter);
+    margin-block-start: var(--gutter);
   }
   .eventinfo {
     margin-left: 110px;
@@ -650,7 +650,6 @@
   .courseinfo {
     padding: var(--gutter);
     margin-block: var(--gutter);
-    border: 2px solid var(--clr-brand--primary);
   }
   .courseinfo > ul {
     list-style-type: none;
