@@ -1,0 +1,3 @@
+[traverse(page, "doktype") == 36650023]
+  TCEMAIN.clearCacheCmd = 24
+[END]

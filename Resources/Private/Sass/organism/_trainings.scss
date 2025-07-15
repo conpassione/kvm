@@ -80,7 +80,7 @@
     grid-template-columns: 60px 1fr;
     grid-column-gap: var(--gutter);
     align-items: center;
-    padding-block: var(--gutter);
+    padding-block: calc(var(--gutter) / 2);
   }
 
   .traininginfo-trainer {

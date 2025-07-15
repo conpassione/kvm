@@ -13,7 +13,6 @@
       background-color: var(--clr-background-brandcolor);
     }
 
-
     .cp-image {
       grid-column: full-width;
       margin-block-end: 0;
@@ -58,8 +57,9 @@
     border: 1px solid var(--clr-brand--primary);
     margin-bottom: var(--gutter);
 
-    .courseinfo {
-      padding-block: calc(var(--gutter) / 2);
+    a > .courseinfo {
+      padding-inline: var(--gutter);
+      border: 0;
     }
   }
 
@@ -72,7 +72,7 @@
   }
 
   .courseschedule {
-    padding-block: var(--gutter);
+    //padding-block: var(--gutter);
   }
 
   .coursenav {
@@ -87,9 +87,9 @@
 
 
   .courseinfo {
-    padding: var(--gutter);
+    padding: var(--gutter );
     margin-block: var(--gutter);
-//    border: 2px solid var(--clr-brand--primary);
+    border: 1px solid var(--clr-brand--primary);
     > ul {
       list-style-type: none;
       padding-inline-start: 0;
@@ -102,7 +102,7 @@
     grid-template-columns: 60px 1fr;
     grid-column-gap: var(--gutter);
     align-items: center;
-    padding-block: var(--gutter);
+    padding-block: calc(var(--gutter) / 2);
   }
 
   .courseinfo-trainer {
