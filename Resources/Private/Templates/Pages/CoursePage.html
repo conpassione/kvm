@@ -61,7 +61,9 @@
                         <span class="courseinfo-icon" style="-webkit-mask-image: url('{src-con}');">
                             <img src="{scr-con}" alt="Voraussetzung">
                         </span>
-                        <f:format.html>{page.pageRecord.cp_conditions}</f:format.html>
+                        <div>
+                            <f:format.html>{page.pageRecord.cp_conditions}</f:format.html>
+                        </div>
                     </li>
                     <li class="courseinfo-item courseinfo-when">
                         <f:variable name="src-wenn" value="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/course/wenn.png')}"></f:variable>

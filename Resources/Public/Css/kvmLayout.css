@@ -567,6 +567,15 @@
     align-items: center;
     padding-block: calc(var(--gutter) / 2);
   }
+  .trainingsinfo-icon {
+    background-color: var(--clr-text);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  }
+  .trainingsinfo-icon > img {
+    opacity: 0;
+  }
   .traininginfo-trainer {
     font-size: var(--fs-big);
   }

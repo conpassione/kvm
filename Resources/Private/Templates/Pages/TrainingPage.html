@@ -45,7 +45,10 @@
             <h2 class="h2">Informationen</h2>
             <ul>
                 <li class="traininginfo-item traininginfo-trainer">
-                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/ul.png')}" alt="Übungsleiter">
+                    <f:variable name="src-ul" value="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/ul.png')}"></f:variable>
+                    <span class="trainingsinfo-icon" style="-webkit-mask-image: url('{src-ul}');">
+                        <img src="{src-ul}" alt="Übungsleiter">
+                    </span>
                     <p>
                         <f:for each="{trainers}" as="trainer">
                             {trainer.data.first_name} {trainer.data.last_name}, <a href="tel:{trainer.data.mobile}" class="phone-link--icon">{trainer.data.mobile}</a><br>
@@ -53,23 +56,35 @@
                     </p>
                 </li>
                 <li class="traininginfo-item traininginfo-condition">
-                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/voraussetzung.png')}" alt="Voraussetzung">
+                    <f:variable name="src-con" value="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/voraussetzung.png')}"></f:variable>
+                    <span class="trainingsinfo-icon" style="-webkit-mask-image: url('{src-con}');">
+                        <img src="{scr-con}" alt="Voraussetzung">
+                    </span>
                     <div>
                         <f:format.html>{page.pageRecord.cp_conditions}</f:format.html>
                     </div>
                 </li>
                 <li class="traininginfo-item traininginfo-when">
-                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wenn.png')}" alt="Trainingszeiten">
+                    <f:variable name="src-wenn" value="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wenn.png')}"></f:variable>
+                    <span class="trainingsinfo-icon" style="-webkit-mask-image: url('{src-wenn}');">
+                        <img src="{src-wenn}" alt="Trainingszeiten">
+                    </span>
                     <div>
                         <f:format.html>{page.pageRecord.cp_when}</f:format.html>
                     </div>
                 </li>
                 <li class="traininginfo-item traininginfo-where">
-                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wo.png')}" alt="Trainingsort">
+                    <f:variable name="src-wo" value="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/wo.png')}"></f:variable>
+                    <span class="trainingsinfo-icon" style="-webkit-mask-image: url('{src-wo}');">
+                        <img src="{src-wo}" alt="Trainingsort">
+                    </span>
                     <p>{page.pageRecord.cp_where}</p>
                 </li>
                 <li class="traininginfo-item traininginfo-fee">
-                    <img src="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/kosten.png')}" alt="Kosten">
+                    <f:variable name="src-kosten" value="{f:uri.image(src: 'EXT:kvm/Resources/Public/Icons/training/kosten.png')}"></f:variable>
+                    <span class="trainingsinfo-icon" style="-webkit-mask-image: url('{src-kosten}');">
+                        <img src="{src-kosten}" alt="Kosten">
+                    </span>
                     <p>Mitglieder: {page.pageRecord.cp_memberfee}<br>Nichtmitglieder: {page.pageRecord.cp_nonmemberfee}</p>
                 </li>
             </ul>
