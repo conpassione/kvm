@@ -141,6 +141,7 @@ renderables:
           - identifier: dog
             type: Text
             label: 'Hundename'
+            defaultValue: 'Zarin'
             properties:
               fluidAdditionalAttributes:
                 required: required
@@ -153,14 +154,9 @@ renderables:
             type: Text
             label: 'Rasse'
           - identifier: birthdate
-            defaultValue: ''
-            type: Date
             label: 'Geburtsdatum Hund'
-            properties:
-              fluidAdditionalAttributes:
-                min: ''
-                max: ''
-                step: 1
+            type: Date
+            defaultValue: 0
       - identifier: confirmation
         type: Checkbox
         label: 'Ich bin einverstanden, dass die erfassten Daten für die Zwecke des Kurses verwendet werden.'

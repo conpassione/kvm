@@ -105,6 +105,16 @@
     padding-block: calc(var(--gutter) / 2);
   }
 
+  .courseinfo-icon {
+    background-color: var(--clr-text);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  }
+  .courseinfo-icon > img {
+    opacity: 0;
+  }
+
   .courseinfo-trainer {
     font-size: var(--fs-big);
   }
