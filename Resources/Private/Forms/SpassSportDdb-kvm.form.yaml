@@ -55,6 +55,7 @@ finishers:
           mapOnDatabaseColumn: 'breed'
         birthdate:
           mapOnDatabaseColumn: 'birthdate'
+          skipIfValueIsEmpty: true
         class:
           mapOnDatabaseColumn: 'class'
         skg:

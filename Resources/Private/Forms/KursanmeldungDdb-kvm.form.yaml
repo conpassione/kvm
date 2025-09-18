@@ -53,6 +53,7 @@ finishers:
           mapOnDatabaseColumn: 'breed'
         birthdate:
           mapOnDatabaseColumn: 'birthdate'
+          skipIfValueIsEmpty: true
   - identifier: Confirmation
     options:
       message: 'Besten Dank für Deine Anmeldung'
