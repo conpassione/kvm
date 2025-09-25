@@ -1,0 +1,10 @@
+tt_content.stafflist {
+#  file >
+  file = EXT:kvm/Resources/Private/ContentElements/Stafflist/frontend.html
+#  partialRootPaths {
+#    36650 = EXT:cpdevsite/ContentBlocks/ContentElements/stafflist/templates/partials/
+#  }
+#  layoutRootPaths {
+#    36650 = EXT:cpdevsite/ContentBlocks/ContentElements/stafflist/templates/layouts/
+#  }
+}
