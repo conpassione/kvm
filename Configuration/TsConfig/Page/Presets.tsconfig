@@ -2,21 +2,21 @@ mod.web_list.downloadPresets {
   tx_conpassione_staff {
     1 {
       label = Funktionärsliste
-      columns = function,responsibility
+      columns = uid,function,responsibility
     }
   }
   tx_conpassione_registrationform {
     1 {
       label = Anmeldedaten
-      columns = lastname,firstname,mobile,email,event,message
+      columns = uid,lastname,firstname,mobile,email,event,message
     }
     2 {
       label = SpassSportAnmeldungen
-      columns = lastname,firstname,mobile,email,event,message,class,dog,skg
+      columns = uid,lastname,firstname,mobile,email,event,message,class,dog,skg
     }
     3 {
       label = PlauschparcourAnmeldung
-      columns = lastname,firstname,mobile,email,dog,breed,birthdate,event
+      columns = uid,lastname,firstname,mobile,email,dog,breed,birthdate,event
     }
   }
 }

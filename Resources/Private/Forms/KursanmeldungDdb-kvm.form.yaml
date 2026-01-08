@@ -142,7 +142,7 @@ renderables:
           - identifier: dog
             type: Text
             label: 'Hundename'
-            defaultValue: 'Zarin'
+            defaultValue: ''
             properties:
               fluidAdditionalAttributes:
                 required: required
