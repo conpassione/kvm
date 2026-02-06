@@ -1,7 +1,7 @@
 {
 	"name": "conpassione/kvm",
 	"type": "typo3-cms-extension",
-	"description": "TYPO3 Extension kvm von conPassione gmbh",
+	"description": "KVM Sitepack by conPassione gmbh",
 	"keywords": [
 		"TYPO3",
 		"TYPO3 Extension",
@@ -20,7 +20,6 @@
 	"prefer-stable" : true,
 	"require": {
 		"causal/extractor": "^2.5",
-		"causal/image_autoresize": "^2.4",
 		"conpassione/cpdevsite": "*",
 		"hauerheinrich/hh_openstreetmap": "^1.1",
 		"typo3/cms-core": "^13.4"

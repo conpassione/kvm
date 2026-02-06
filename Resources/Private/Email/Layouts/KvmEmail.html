@@ -39,7 +39,7 @@
             }
 
             body {
-                background-color: #cccccc;
+                background-color: #e0e0e0;
             }
 
             .emailTable {
@@ -48,6 +48,10 @@
 
             .footerContent {
                 background-color: #999999;
+            }
+
+            .justify-right {
+                text-align: right;
             }
 
             h1 {
@@ -62,8 +66,7 @@
             }
 
             .contentTable {
-                margin-left: 2rem;
-                margin-block: 2rem;
+                margin: 2rem;
             }
 
             @media (prefers-color-scheme: dark) {
@@ -93,7 +96,7 @@
 <body class="body" xml:lang="de">
 
 
-    <div role="article" aria-roledescription="email" aria-label="KVM E-Mail" lang="de" dir="ltr" style="font-family:'Helvetica Neue', Helvetica, Arial, Roboto, system-ui, sans-serif; font-size:medium; font-size:max(16px, 1rem); max-width:45em; margin: 0 auto;">
+    <div role="article" aria-roledescription="email" aria-label="KVM E-Mail" lang="de" dir="ltr" style="font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, Roboto, system-ui, sans-serif; font-size:medium; font-size:max(16px, 1rem); max-width:45em; margin: 0 auto;">
         <table class="emailTable" align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%">
             <tr>
                 <td width="120px" class="logoCol" valign="top">
@@ -101,6 +104,14 @@
                 </td>
                 <td>
                     <table class="contentTable">
+                        <tr>
+                            <td class="justify-right">
+                                <p>Kynologischer Verein Münsingen<br>
+                                    Dammweg 5<br>
+                                    3110 Münsingen<br>
+                                    <a href="mailto:info@kv-muensingen.ch" style="text-decoration: none; color: inherit;">info@kv-muensingen.ch</a></p>
+                            </td>
+                        </tr>
                         <tr>
                             <td>
                                 <f:render section="Title"/>
@@ -120,7 +131,7 @@
                     <table class="contentTable" >
                         <tr>
                             <td>&nbsp;</td>
-                            <td>Das ist ein Angebot des Kynologischen Vereins Münsingen.</td>
+                            <td>Das ist ein Angebot des <a href="https://www.kv-muensingen.ch">Kynologischen Vereins Münsingen.</a></td>
                         </tr>
                     </table>
                     <!-- /.contentTable -->
