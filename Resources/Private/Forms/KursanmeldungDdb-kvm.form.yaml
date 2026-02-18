@@ -20,7 +20,7 @@ finishers:
       subject: '{event}: Kursanmeldung von {lastname} {firstname} - {dog}'
       recipients:
         info@kv-muensingen.ch: 'Kynologischer Verein Münsingen'
-      senderAddress: '{email}'
+      senderAddress: 'no-replay@kv-muensingen.ch'
       senderName: '{lastname} {firstname}'
       addHtmlPart: true
       attachUploads: false

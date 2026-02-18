@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="it" original="Labels.xlf" datatype="plaintext" product-name="conpassione/csbp-registrationform" date="2025-05-18T16:22:56+02:00">
+	<file source-language="en" target-language="it" original="Labels.xlf" datatype="plaintext" product-name="conpassione/csbp-registrationform" date="2026-02-18T15:00:43+01:00">
 		<header></header>
 		<body>
 			<trans-unit id="birthdate.label">
@@ -10,6 +10,10 @@
 			<trans-unit id="breed.label">
 				<source>Breed</source>
 				<target>Razza</target>
+			</trans-unit>
+			<trans-unit id="city.label">
+				<source>PC / City</source>
+				<target>CP / Luogo</target>
 			</trans-unit>
 			<trans-unit id="class.label">
 				<source>Class</source>
@@ -42,6 +46,10 @@
 			<trans-unit id="skg.label">
 				<source>I am SKG member</source>
 				<target>Sono membro della SCS</target>
+			</trans-unit>
+			<trans-unit id="street.label">
+				<source>Street</source>
+				<target>Strada</target>
 			</trans-unit>
 			<trans-unit id="title">
 				<source>Registration</source>

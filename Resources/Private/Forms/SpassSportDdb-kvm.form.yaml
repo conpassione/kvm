@@ -20,7 +20,7 @@ finishers:
       subject: 'Anmeldung SpassSport von {lastname} {firstname}'
       recipients:
         info@kv-muensingen.ch: 'Kynologischer Verein Münsingen'
-      senderAddress: '{email}'
+      senderAddress: 'no-replay@kv-muensingen.ch'
       senderName: '{lastname} {firstname}'
       addHtmlPart: true
       attachUploads: false
@@ -41,6 +41,10 @@ finishers:
           mapOnDatabaseColumn: 'lastname'
         firstname:
           mapOnDatabaseColumn: 'firstname'
+        street:
+          mapOnDatabaseColumn: 'street'
+        city:
+          mapOn DatabaseColumn: 'city'
         mobile:
           mapOnDatabaseColumn: 'mobile'
         email:
@@ -83,8 +87,8 @@ renderables:
           fluidAdditionalAttributes:
             readonly: readonly
             hidden: hidden
-      - type: GridRow
-        identifier: gridrow-2
+      - identifier: gridrow-2
+        type: GridRow
         label: 'Person'
         renderables:
           - identifier: lastname
@@ -100,6 +104,28 @@ renderables:
             defaultValue: ''
             type: Text
             label: 'Vorname'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              - identifier: NotEmpty
+      - identifier: gridrow-3
+        type: GridRow
+        label: 'Address'
+        renderables:
+          - identifier: street
+            defaultValue: ''
+            type: Text
+            label: 'Strasse'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              - identifier: NotEmpty
+          - identifier: city
+            defaultValue: ''
+            type: Text
+            label: 'PLZ / Ort'
             properties:
               fluidAdditionalAttributes:
                 required: required

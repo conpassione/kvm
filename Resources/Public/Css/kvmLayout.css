@@ -172,13 +172,13 @@
   /* =============================== */
   :root {
     /* fontfaces */
-    --ff: "Open SansL";
-    --ff-condensed: "Open SansL";
-    --ff-serif: "Open SansL";
-    --ff-h: "Open SansSB";
-    --ff-nav: "Open Sans";
-    --ff-mono: "Open Sans";
-    --ff-symbol: "Symbols";
+    --ff: 'Open SansL';
+    --ff-condensed: 'Open SansL';
+    --ff-serif: 'Open SansL';
+    --ff-h: 'Open SansSB';
+    --ff-nav: 'Open Sans';
+    --ff-mono: 'Open Sans';
+    --ff-symbol: 'Symbols';
     /* font weight */
     --fw-regular: 100;
     --fw-mono: 300;
@@ -410,6 +410,10 @@
     }
   }
 }
+.cp-carousel {
+  padding: 0px;
+}
+
 /* page */
 @layer kvmstyles {
   /*   .headercontent {

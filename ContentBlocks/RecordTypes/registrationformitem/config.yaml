@@ -24,6 +24,13 @@ fields:
   - identifier: firstname
     type: Text
     label: 'Vorname'
+  - identifier: street
+    type: Text
+    label: 'Strasse'
+    required: true
+  - identifier: city
+    type: Text
+    label: 'PLZ / Ort'
   - identifier: mobile
     type: Text
     label: 'Mobile'

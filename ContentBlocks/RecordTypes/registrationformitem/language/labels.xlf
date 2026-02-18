@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" original="Labels.xlf" datatype="plaintext" product-name="conpassione/csbp-registrationform" date="2025-05-18T16:22:56+02:00">
+	<file source-language="en" original="Labels.xlf" datatype="plaintext" product-name="conpassione/csbp-registrationform" date="2026-02-18T15:00:43+01:00">
 		<header></header>
 		<body>
 			<trans-unit id="birthdate.label">
@@ -8,6 +8,9 @@
 			</trans-unit>
 			<trans-unit id="breed.label">
 				<source>Breed</source>
+			</trans-unit>
+			<trans-unit id="city.label">
+				<source>PC / City</source>
 			</trans-unit>
 			<trans-unit id="class.label">
 				<source>Class</source>
@@ -32,6 +35,9 @@
 			</trans-unit>
 			<trans-unit id="skg.label">
 				<source>I am SKG member</source>
+			</trans-unit>
+			<trans-unit id="street.label">
+				<source>Street</source>
 			</trans-unit>
 			<trans-unit id="title">
 				<source>Registration</source>
