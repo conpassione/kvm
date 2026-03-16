@@ -10,7 +10,7 @@
             <div class="swiper-slide cpslider-item{f:if(condition: '{iteration.isFirst}', then:' active')}">
                 <f:image image="{item.image}" class="cpslider-image"/>
                 <div class="cpslider-caption">
-                    <h5><f:link.typolink parameter="{item.link}">{item.header}</f:link.typolink></h5>
+                    <h3 class="h3"><span class="iconfont">right</span><f:link.typolink parameter="{item.link}">{item.header}</f:link.typolink></h3>
                     <f:format.html>{item.description}</f:format.html>
                 </div>
             </div>

@@ -20,6 +20,10 @@
   position: absolute;
   left: var(--gutter);
   bottom: calc(var(--gutter) * 1.2);
+  width: fit-content;
+  padding: var(--gutter);
+  background-color: rgba(255,255,255,0.6);
+  color: var(--clr-bw-020);
 }
 
 .swiper-pagination {
