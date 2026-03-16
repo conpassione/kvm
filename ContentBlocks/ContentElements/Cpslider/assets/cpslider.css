@@ -1,0 +1,27 @@
+:root {
+  --swiper-theme-color: var(--clr-brand--primary);
+  --swiper-pagination-bullet-inactive-color: var(--clr-bw-060);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bottom: 8px;
+}
+.cpslider {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+.cpslider-inner {
+  display:flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.cpslider-caption {
+  position: absolute;
+  left: var(--gutter);
+  bottom: calc(var(--gutter) * 1.2);
+}
+
+.swiper-pagination {
+  z-index: 100;
+}

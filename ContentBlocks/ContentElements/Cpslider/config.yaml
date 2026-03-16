@@ -1,0 +1,23 @@
+name: conpassione/cpslider
+typeName: conpassione_cpslider
+group: z-cpextensions
+fields:
+  - identifier: slider_items
+    type: Collection
+    minitems: 1
+    appearance:
+      collapseAll: true
+      levelLinksPosition: bottom
+    fields:
+      - identifier: header
+        type: Text
+      - identifier: link
+        type: Link
+      - identifier: image
+        type: File
+        allowed: common-image-types
+        minitems: 1
+        relationship: manyToOne
+      - identifier: description
+        type: Textarea
+        enableRichtext: true

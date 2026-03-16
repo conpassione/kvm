@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" original="labels.xlf" datatype="plaintext" product-name="t3docs/slider" date="2026-03-13T11:26:31+01:00">
+        <header></header>
+        <body>
+            <trans-unit id="backend.itemCount">
+                <source>slider with %s items</source>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>Vanilla Javascript Slider</source>
+            </trans-unit>
+            <trans-unit id="next.label">
+                <source>Next</source>
+            </trans-unit>
+            <trans-unit id="previous.label">
+                <source>Previous</source>
+            </trans-unit>
+            <trans-unit id="slider_items.description.label">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="slider_items.header.label">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="slider_items.image.label">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="slider_items.label">
+                <source>Slider Items</source>
+            </trans-unit>
+            <trans-unit id="title">
+                <source>Slider</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

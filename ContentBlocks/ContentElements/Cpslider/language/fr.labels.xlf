@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fr" original="" datatype="plaintext" date="2026-03-13T11:29:28+01:00">
+        <body>
+            <trans-unit id="backend.itemCount">
+                <source>slider with %s items</source>
+                <target>slider with %s items</target>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>Vanilla Javascript Slider</source>
+                <target>Vanilla Javascript Slider</target>
+            </trans-unit>
+            <trans-unit id="next.label">
+                <source>Next</source>
+                <target>Next</target>
+            </trans-unit>
+            <trans-unit id="previous.label">
+                <source>Previous</source>
+                <target>Previous</target>
+            </trans-unit>
+            <trans-unit id="slider_items.description.label">
+                <source>Description</source>
+                <target>Déscription</target>
+            </trans-unit>
+            <trans-unit id="slider_items.header.label">
+                <source>Header</source>
+                <target>Titre</target>
+            </trans-unit>
+            <trans-unit id="slider_items.image.label">
+                <source>Image</source>
+                <target>Image</target>
+            </trans-unit>
+            <trans-unit id="slider_items.label">
+                <source>Slider Items</source>
+                <target>Slider Items</target>
+            </trans-unit>
+            <trans-unit id="title">
+                <source>Slider</source>
+                <target>Slider</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

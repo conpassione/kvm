@@ -18,7 +18,7 @@ mod {
                     identifier = hero
                     colPos = 9
                     allowed {
-                      CType = image,text,cp-carousel
+                      CType = image,text,conpassione_cpslider
                     }
                     maxitems = 3
                   }

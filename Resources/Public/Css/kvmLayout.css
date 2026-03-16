@@ -407,6 +407,7 @@
     .section-hero .heroright {
       grid-column: centerline/breakout-end;
       align-content: center;
+      padding: var(--gutter);
     }
   }
 }

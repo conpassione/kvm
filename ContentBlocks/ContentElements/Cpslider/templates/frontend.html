@@ -1,0 +1,23 @@
+<f:asset.css identifier="cpslider1" href="{cb:assetPath()}/swiper-bundle.min.css"/>
+<f:asset.css identifier="cpslider2" href="{cb:assetPath()}/cpslider.css"/>
+
+<f:asset.script identifier="cpslider1" src="{cb:assetPath()}/swiper-bundle.min.js"/>
+<f:asset.script identifier="cpslider2" src="{cb:assetPath()}/cpslider.js"/>
+
+<div id="cpslider{data.uid}" class="cpslider">
+    <div class="cpslider-inner swiper-wrapper">
+        <f:for each="{data.slider_items}" as="item" iteration="iteration">
+            <div class="swiper-slide cpslider-item{f:if(condition: '{iteration.isFirst}', then:' active')}">
+                <f:image image="{item.image}" class="cpslider-image"/>
+                <div class="cpslider-caption">
+                    <h5><f:link.typolink parameter="{item.link}">{item.header}</f:link.typolink></h5>
+                    <f:format.html>{item.description}</f:format.html>
+                </div>
+            </div>
+        </f:for>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-slider-button swiper-button-prev"></div>
+    <div class="swiper-slider-button swiper-button-next"></div>
+
+</div>

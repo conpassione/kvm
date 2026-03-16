@@ -22,7 +22,8 @@
 		"causal/extractor": "^2.5",
 		"conpassione/cpdevsite": "*",
 		"hauerheinrich/hh_openstreetmap": "^1.1",
-		"typo3/cms-core": "^13.4"
+		"typo3/cms-core": "^13.4",
+		"ext-curl": "*"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-latest",
