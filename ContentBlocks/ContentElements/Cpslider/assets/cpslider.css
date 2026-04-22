@@ -26,6 +26,8 @@
   color: var(--clr-bw-020);
 }
 
+.swiper-button-next,
+.swiper-button-prev,
 .swiper-pagination {
-  z-index: 100;
+  z-index: 5;
 }
